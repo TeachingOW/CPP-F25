@@ -30,16 +30,21 @@ struct BMPHeader {
 #pragma pack(pop)
 class BMP {
 public:
+    //Create a blank width x height image.
     BMP(int width, int height) : width(width), height(height) {
         row_size = width * 3;  // 3 bytes per pixel
         padded_row_size = (row_size + 3) & ~3; // Align to 4-byte boundary
         data.resize(padded_row_size * height, 255); // Initialize with white
     }
-
+    //Open a BMP file
+    // file must be not compressed
     BMP(const std::string& file_name) {
         read(file_name);
     }
-
+    // setting the color of pixel (x,y)
+    // r red color (0-255)
+    //g green color (0-255)
+    // b blue color (0-255)
     void set_pixel(int x, int y, uint8_t r, uint8_t g, uint8_t b) {
         if (x >= 0 && x < width && y >= 0 && y < height) {
             int index = ((height - 1 - y) * padded_row_size) + (x * 3);
@@ -48,7 +53,7 @@ public:
             data[index + 2] = r;
         }
     }
-
+    //get the color (red, green and blue ) for pixel (x,y)
     void get_pixel(int x, int y, uint8_t& r, uint8_t& g, uint8_t& b) const {
         if (x >= 0 && x < width && y >= 0 && y < height) {
             int index = ((height - 1 - y) * padded_row_size) + (x * 3);
@@ -57,7 +62,7 @@ public:
             r = data[index + 2];
         }
     }
-
+    //write the current image into this file
     void write(const std::string& file_name) const {
         std::ofstream out(file_name, std::ios::binary);
         if (!out) {
@@ -110,11 +115,11 @@ public:
         in.seekg(bmp_header.data_offset, std::ios::beg);
         in.read(reinterpret_cast<char*>(data.data()), data.size());
     }
-
+   //get the width
     int get_width() const {
         return width;
     }
-
+     // get the height
     int get_height() const {
         return height;
     }
