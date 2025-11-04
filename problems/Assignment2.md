@@ -99,4 +99,4 @@ you can work in groups of 3.
 2. Proper handling of image boundaries.
 3. Ability to adjust blur size.
 
-Bonus: if you run Square Blur in linear time.
+Bonus: if you compute the Square Blur code in a constant time regadress of the size of blur.
