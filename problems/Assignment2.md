@@ -9,7 +9,7 @@
 ## Part 1: Flood Fill Algorithm
 
 ### Description
-The flood fill algorithm starts from a given pixel and fills all neigbour pixels of the same color with a new color until it encounters a boundary color. Use a `std::deque`  and a `visited` 2-d array.
+The flood fill algorithm starts from a given pixel and fills all neigbour pixels of the same color with a new color until it encounters a boundary color. Use a `std::queue`  and a `visited` 2-d array.
 Assume the maximum image size is 1000x1000 pixels. 
 
 Hint: Define the `visited` globally.
@@ -33,17 +33,17 @@ function floodFill(image, startX, startY, fillColor):
     // You need to compare red with red, green with green and blue with blue
     if startColor == fillColor: 
             return
-    create a deque and add (startX, startY) to it
+    create an queue and add (startX, startY) to it
     create a 2D array `visited` of size (MAX_SIZE, MAX_SIZE) initialized to false
     mark (startX, startY) as visited
-    while deque is not empty:
-        (x, y) = remove the first element from the deque
+    while the queue is not empty:
+        (x, y) = remove the first element from the queue
         mark visited[x][y] to true
         if image.get_pixel(x, y) == startColor:
             image.set_pixel(x, y, fillColor)
             for each neighbor (nx, ny) of (x, y):
                 if nx and ny are within image bounds and not visited[nx][ny]:
-                    add (nx, ny) to the deque
+                    add (nx, ny) to the queue
                     mark (nx, ny) as visited
 ```
 
@@ -91,7 +91,7 @@ you can work in groups of 3.
 ## Grading Criteria
 
 ### Flood Fill
-1. Correct implementation of the non-recursive flood fill algorithm using a `deque` and `visited` matrix.
+1. Correct implementation of the non-recursive flood fill algorithm using a `queue` and `visited` matrix.
 2. Proper handling of boundary conditions.
 
 ### Square Blur
