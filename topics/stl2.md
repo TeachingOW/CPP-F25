@@ -52,9 +52,7 @@ Output:
 
 ## 💻 Full Source Code
 
-<div align="right">
-  <button onclick="navigator.clipboard.writeText(document.getElementById('code').innerText)" style="padding:6px 12px;border:none;border-radius:6px;background:#007acc;color:white;cursor:pointer;">📋 Copy</button>
-</div>
+
 
 ```cpp
 #include <vector>
@@ -152,11 +150,8 @@ Output:
 
 ---
 
-## 💻 Full Source Code
+## 💻  Source Code
 
-<div align="right">
-  <button onclick="navigator.clipboard.writeText(document.getElementById('code2').innerText)" style="padding:6px 12px;border:none;border-radius:6px;background:#007acc;color:white;cursor:pointer;">📋 Copy</button>
-</div>
 
 ```cpp
 #include <vector>
@@ -209,3 +204,89 @@ int main() {
 }
 ```
 
+
+# ⚡ Generic Merge Sort in C++
+
+This implementation of **Merge Sort** is both **generic** and **highly efficient**.  
+It allows you to sort any type of container elements using either the default `<` operator or a custom comparator you provide.  
+
+```c++
+#pragma once
+#include <vector>
+#include <functional>
+
+// merge subarray A[start, middle] and A[middle+1, end] into B[start, end]
+template <typename T, typename CMP = std::less<T>>
+void merge(const std::vector<T>& A, std::vector<T>& B, int start, int middle, int end, CMP cmp = CMP{}) {
+    int i1 = start;
+    int i2 = middle + 1;
+    int e1 = middle;
+    int e2 = end;
+    int b = start;
+
+    for (;;) {
+        if (cmp(A[i1], A[i2])) {
+            B[b++] = A[i1++];
+        } else {
+            B[b++] = A[i2++];
+        }
+        if (i1 > e1 || i2 > e2) break;
+    }
+
+    while (i1 <= e1) B[b++] = A[i1++];
+    while (i2 <= e2) B[b++] = A[i2++];
+}
+
+template <typename T, typename CMP = std::less<T>>
+void mergesort(std::vector<T>& src, std::vector<T>& dst, int start, int end, CMP cmp = CMP{}) {
+    if (start >= end) return;
+
+    int middle = (start + end) / 2;
+
+    // swap src and dst roles in recursive calls
+    mergesort(dst, src, start, middle, cmp);
+    mergesort(dst, src, middle + 1, end, cmp);
+
+    // merge from src into dst
+    merge(src, dst, start, middle, end, cmp);
+}
+
+// entry point
+template <typename T, typename CMP = std::less<T>>
+void mergesort(std::vector<T>& A, CMP cmp = CMP{}) {
+    if (A.empty()) return;
+    std::vector<T> B = A; // allocate once
+    mergesort(B, A, 0, A.size() - 1, cmp);
+}
+```
+The code to try this out:
+
+```c++
+#include <vector>
+#include <iostream>
+#include "mergesort.h"
+
+struct student {
+    std::string name;
+    double gpa;
+};
+struct studentcmp {
+    bool operator()(const student& s1, const student& s2) const {
+        return s1.gpa < s2.gpa;
+    }
+};
+int main() {
+    std::vector<student> students = {
+        {"Alice", 3.5},
+        {"Bob", 3.8},
+        {"Charlie", 3.2}
+    };
+
+    mergesort(students, studentcmp{});
+
+    for (auto& s : students) {
+        std::cout << s.name << " " << s.gpa << "\n";
+    }
+}
+
+```
