@@ -7,6 +7,7 @@
 - [Pointer](topics/pointers)
 - [Rule of Three](topics/ruleofThree)
 - [Template](topics/templates)
+- [stl II](topics/stl2)
 
 ## Lectures Code
 
