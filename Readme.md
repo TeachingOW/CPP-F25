@@ -9,6 +9,10 @@
 - [Template](topics/templates)
 - [stl II](topics/stl2)
 
+
+## Youtube Playlist 
+-  [C++ Programming playlist](https://www.youtube.com/playlist?list=PLvv0ScY6vfd8j-tlhYVPYgiIyXduu6m-L)
+
 ## Lectures Code
 
 | Lecture  | Link                                                                 | 
@@ -24,17 +28,21 @@
 | Lec 10   | [Link](https://gist.github.com/oldwestbury/948d871e686dda79b402295e2b0869ed) | 
 | Lec 11   | [Link](https://gist.github.com/oldwestbury/1822a7f649152a2709497f89fa693ecc) | 
 
+# Code 
+- [Sudoku Solver](https://github.com/TeachingOW/Sudoku-Solver)
+- [BMP Image Processing Quick start](https://github.com/TeachingOW/CPPF25-Assignment2)
+- [SIMDJosn Quickstart](https://github.com/TeachingOW/simdjson-quickstart)
 
-## Lecture 10/20
+# Lecture 10/29
+- Working on Bitmap image programs
+# Lecture 10/27
+  - Working on Bitmap image programs
+# Lecture 10/22
+  - Test your code: https://leetcode.com/problems/design-circular-queue/
+# Lecture 10/20
 - [Vector (with rule of 3)](https://gist.github.com/oldwestbury/3d25c40b3296936c2c457f1a1e5bd99e)
 - Circular Buffer 
 <!-- HW  implment your own strcpy & strcmp -->
 
-# Lecture 10/22
-  - Test your code: https://leetcode.com/problems/design-circular-queue/
 
-# Lecture 10/27
-  - Working on Bitmap image programs
 
-# Lecture 10/29
-- Working on Bitmap image programs
