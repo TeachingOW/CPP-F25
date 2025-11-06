@@ -104,9 +104,11 @@ For a horizontal gradient:
 $$
 R = r_1 + (r_2 - r_1) \cdot \frac{x - x_1}{x_2 - x_1}
 $$
+
 $$
 G = g_1 + (g_2 - g_1) \cdot \frac{x - x_1}{x_2 - x_1}
 $$
+
 $$
 B = b_1 + (b_2 - b_1) \cdot \frac{x - x_1}{x_2 - x_1}
 $$
