@@ -24,8 +24,11 @@ Although simple, this approach suffers from rounding errors, uneven pixel placem
 ### **2. Floating-Point Method (Conceptual Description)**
 
 1. Compute the slope ( m ) and intercept ( b ).
-2. Step through all integer values of `x` between `x1` and `x2`.
-3. For each step:
+   $$ m = \frac{y_2 - y_1}{x_2 - x_1}$$ \\
+   $$ b=y1​−mx1​ $$
+   
+3. Step through all integer values of `x` between `x1` and `x2`.
+4. For each step:
 
    * Compute ( y = m x + b ).
    * Round ( y ) to the nearest integer pixel.
