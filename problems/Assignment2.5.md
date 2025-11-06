@@ -103,14 +103,13 @@ The fill color of each pixel is a weighted blend based on its position.
 For a horizontal gradient:
 
 $$
-\begin{align}
-R = r_1 + (r_2 - r_1) \cdot \frac{x - x_1}{x_2 - x_1}\\
-
-G = g_1 + (g_2 - g_1) \cdot \frac{x - x_1}{x_2 - x_1}\\
-
-B = b_1 + (b_2 - b_1) \cdot \frac{x - x_1}{x_2 - x_1}\\
-\end{align}
+\begin{aligned}
+R &= r_1 + (r_2 - r_1) \cdot \frac{x - x_1}{x_2 - x_1} \\
+G &= g_1 + (g_2 - g_1) \cdot \frac{x - x_1}{x_2 - x_1} \\
+B &= b_1 + (b_2 - b_1) \cdot \frac{x - x_1}{x_2 - x_1}
+\end{aligned}
 $$
+
 Each pixel’s color depends on how far it lies between the two edges.
 
 ---
