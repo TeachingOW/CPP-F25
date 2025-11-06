@@ -18,6 +18,10 @@
       --link-dark: #00bcd4;
       --mermaid-light: #e0f7fa;
       --mermaid-dark: #2c2c3e;
+      --table-border-light: #ccc;
+      --table-border-dark: #555;
+      --table-row-light: #f9f9f9;
+      --table-row-dark: #2a2a2a;
     }
 
     /* Base Styles */
@@ -50,7 +54,9 @@
       overflow-x: auto;
       transition: background-color 0.3s;
     }
-table {
+
+    /* TABLE STYLING */
+    table {
       border-collapse: collapse;
       width: 100%;
       margin: 1.5em 0;
@@ -67,7 +73,12 @@ table {
       background-color: var(--table-row-light);
     }
 
-    /* Dark Mode Class */
+    th {
+      background-color: #e6f2e6;
+      font-weight: bold;
+    }
+
+    /* Dark Mode */
     body.dark-mode {
       background-color: var(--bg-dark);
       color: var(--text-dark);
@@ -86,6 +97,20 @@ table {
 
     body.dark-mode .mermaid {
       background-color: var(--mermaid-dark);
+    }
+
+    /* Dark Mode Table */
+    body.dark-mode th, 
+    body.dark-mode td {
+      border: 1px solid var(--table-border-dark);
+    }
+
+    body.dark-mode tr:nth-child(even) {
+      background-color: var(--table-row-dark);
+    }
+
+    body.dark-mode th {
+      background-color: #224422;
     }
 
     /* Toggle Button */
@@ -113,21 +138,23 @@ table {
     import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
     mermaid.initialize({ startOnLoad: true, theme: "default" });
   </script>
-</head>
-<body>
-  <!-- Mode Toggle Button -->
- 
-
-  <main>
-    {{ content }}
-  </main>
-<script>
+  <script>
 window.MathJax = {
   tex: { inlineMath: [['\\(','\\)']], displayMath: [['$$','$$']] },
   svg: { fontCache: 'global' }
 };
 </script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" defer></script>
+</head>
+<body>
+  <!-- Mode Toggle Button -->
+  <button id="mode-toggle">Toggle Mode</button>
+
+  <main>
+    {{ content }}
+
+   </main>
+
   <script>
     const toggleBtn = document.getElementById('mode-toggle');
     toggleBtn.addEventListener('click', () => {
