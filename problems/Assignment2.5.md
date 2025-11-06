@@ -1,4 +1,4 @@
-# ** Line Drawing and Gradient Coloring**
+#  Line Drawing and Gradient Coloring
 
 ---
 

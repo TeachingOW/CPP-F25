@@ -50,6 +50,22 @@
       overflow-x: auto;
       transition: background-color 0.3s;
     }
+table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 1.5em 0;
+      font-size: 1rem;
+    }
+
+    th, td {
+      border: 1px solid var(--table-border-light);
+      padding: 0.6em 1em;
+      text-align: left;
+    }
+
+    tr:nth-child(even) {
+      background-color: var(--table-row-light);
+    }
 
     /* Dark Mode Class */
     body.dark-mode {
@@ -105,7 +121,13 @@
   <main>
     {{ content }}
   </main>
-
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['\\(','\\)']], displayMath: [['$$','$$']] },
+  svg: { fontCache: 'global' }
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" defer></script>
   <script>
     const toggleBtn = document.getElementById('mode-toggle');
     toggleBtn.addEventListener('click', () => {
