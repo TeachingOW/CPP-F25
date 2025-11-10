@@ -131,8 +131,44 @@
     #mode-toggle:hover {
       background: #005f8a;
     }
-  </style>
 
+    
+  </style>
+ <style>
+      /* small, unobtrusive copy button for code blocks */
+      .code-copy-wrapper { position: relative; }
+      pre { position: relative; overflow: auto; }
+      .copy-btn {
+        position: absolute;
+        top: 0.4rem;
+        right: 0.4rem;
+        padding: 0.25rem 0.5rem;
+        font-size: 0.8rem;
+        border-radius: 6px;
+        border: 1px solid rgba(0,0,0,0.08);
+        background: rgba(255,255,255,0.95);
+        cursor: pointer;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.06);
+      }
+      .copy-btn:focus { outline: 2px solid #3b82f6; outline-offset: 2px; }
+      .copy-btn[aria-pressed="true"] { background: #e6ffed; border-color: #a3f7bf; }
+      .copy-tooltip {
+        position: absolute;
+        top: -2rem;
+        right: 0.4rem;
+        font-size: 0.75rem;
+        padding: 0.15rem 0.4rem;
+        border-radius: 4px;
+        background: rgba(0,0,0,0.75);
+        color: white;
+        white-space: nowrap;
+        transform-origin: top right;
+        opacity: 0;
+        transition: opacity 120ms ease;
+        pointer-events: none;
+      }
+      .copy-tooltip.show { opacity: 1; }
+    </style>
   <!-- Mermaid.js -->
   <script type="module">
     import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
