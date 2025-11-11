@@ -21,13 +21,6 @@
       --table-row-dark: #2a2a2a;
     }
 
-    body {
-      font-family: system-ui, sans-serif;
-      margin: 2em;
-      background-color: var(--bg-light);
-      color: var(--text-light);
-      transition: background-color 0.3s, color 0.3s;
-    }
 
     h1, h2, h3, h4 { color: var(--heading-light); }
     a { color: var(--link-light); text-decoration: none; }
@@ -155,10 +148,28 @@
     }
     #mode-toggle:hover { background: #005f8a; }
 
-main {
-  max-width: 900px; /* ⬅️ Added */
-  width: 100%;
+
+
+body {
+  font-family: system-ui, sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  transition: background-color 0.3s, color 0.3s;
+      margin: 2em;
+
+  /* 🧭 Center content */
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 2em;
 }
+
+main {
+  max-width: 900px;  /* ⬅️ Limit width */
+  width: 100%;
+  margin: 0 auto;    /* ⬅️ Center horizontally */
+}
+
 
   </style>
 
