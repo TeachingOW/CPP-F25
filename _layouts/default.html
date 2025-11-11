@@ -197,29 +197,39 @@
       });
     });
 
-    // 🧩 Convert [!NOTE], [!TIP], [!WARNING] blockquotes into styled divs (with full Markdown)
-    document.querySelectorAll("blockquote").forEach((bq) => {
-      const text = bq.innerHTML.trim(); // preserve Markdown formatting
-      if (text.startsWith("[!NOTE]")) {
-        const content = text.replace("[!NOTE]", "").trim();
-        const div = document.createElement("div");
-        div.className = "callout callout-note";
-        div.innerHTML = `<strong>💡 Note</strong>${content}`;
-        bq.replaceWith(div);
-      } else if (text.startsWith("[!TIP]")) {
-        const content = text.replace("[!TIP]", "").trim();
-        const div = document.createElement("div");
-        div.className = "callout callout-tip";
-        div.innerHTML = `<strong>✅ Tip</strong>${content}`;
-        bq.replaceWith(div);
-      } else if (text.startsWith("[!WARNING]")) {
-        const content = text.replace("[!WARNING]", "").trim();
-        const div = document.createElement("div");
-        div.className = "callout callout-warning";
-        div.innerHTML = `<strong>⚠️ Warning</strong>${content}`;
-        bq.replaceWith(div);
-      }
-    });
+// 🧩 Convert [!NOTE], [!TIP], [!WARNING] blockquotes into styled divs (robust version)
+document.querySelectorAll("blockquote").forEach((bq) => {
+  const firstPara = bq.querySelector("p");
+  if (!firstPara) return;
+
+  const text = firstPara.innerText.trim().toUpperCase();
+
+  let type = null;
+  if (text.startsWith("[!NOTE]")) type = "note";
+  else if (text.startsWith("[!TIP]")) type = "tip";
+  else if (text.startsWith("[!WARNING]")) type = "warning";
+
+  if (type) {
+    // Remove the marker from the first paragraph
+    firstPara.innerHTML = firstPara.innerHTML.replace(/\[!(NOTE|TIP|WARNING)\]/i, "").trim();
+
+    // Create the callout div and copy inner HTML (to preserve lists, links, etc.)
+    const div = document.createElement("div");
+    div.className = `callout callout-${type}`;
+
+    const titles = {
+      note: "💡 Note",
+      tip: "✅ Tip",
+      warning: "⚠️ Warning",
+    };
+
+    div.innerHTML = `<strong>${titles[type]}</strong>${bq.innerHTML}`;
+    bq.replaceWith(div);
+  }
+});
+
+
+
   </script>
 </body>
 </html>
