@@ -173,12 +173,12 @@
   </main>
 
   <script>
-    // 🌗 Dark/Light Mode
+    // 🌗 Dark/Light Mode Toggle
     document.getElementById("mode-toggle").addEventListener("click", () => {
       document.body.classList.toggle("dark-mode");
     });
 
-    // 📋 Copy Button for Code
+    // 📋 Copy Button for Code Blocks
     document.querySelectorAll("pre").forEach((pre) => {
       const button = document.createElement("button");
       button.className = "copy-btn";
@@ -197,9 +197,9 @@
       });
     });
 
-    // 🧩 Convert [!NOTE], [!TIP], [!WARNING] blockquotes into styled divs
+    // 🧩 Convert [!NOTE], [!TIP], [!WARNING] blockquotes into styled divs (with full Markdown)
     document.querySelectorAll("blockquote").forEach((bq) => {
-      const text = bq.innerText.trim();
+      const text = bq.innerHTML.trim(); // preserve Markdown formatting
       if (text.startsWith("[!NOTE]")) {
         const content = text.replace("[!NOTE]", "").trim();
         const div = document.createElement("div");
