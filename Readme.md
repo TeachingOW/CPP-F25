@@ -36,6 +36,9 @@
 
 # Lectures
 
+## Lecture 11/10
+Working with files
+
 ## Lecture 10/29
 Working on Bitmap image programs
 
