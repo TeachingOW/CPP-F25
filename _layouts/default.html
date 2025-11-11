@@ -154,6 +154,18 @@
       transition: background 0.3s;
     }
     #mode-toggle:hover { background: #005f8a; }
+
+    body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 2em;
+}
+
+main {
+  max-width: 900px; /* ⬅️ Added */
+  width: 100%;
+}
   </style>
 
   <!-- Mermaid + MathJax -->
@@ -170,8 +182,9 @@
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" defer></script>
 </head>
 <body>
+<!--
   <button id="mode-toggle">Toggle Mode</button>
-
+-->
   <main>
     {{ content }}
   </main>
