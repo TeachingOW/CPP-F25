@@ -19,10 +19,6 @@
       --table-border-dark: #555;
       --table-row-light: #f9f9f9;
       --table-row-dark: #2a2a2a;
-      --note-bg-light: #e6f3ff;
-      --note-bg-dark: #253040;
-      --note-border-light: #0077b6;
-      --note-border-dark: #00bcd4;
     }
 
     body {
@@ -33,19 +29,11 @@
       transition: background-color 0.3s, color 0.3s;
     }
 
-    h1, h2, h3, h4 {
-      color: var(--heading-light);
-    }
+    h1, h2, h3, h4 { color: var(--heading-light); }
+    a { color: var(--link-light); text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
-    a {
-      color: var(--link-light);
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-
-    /* Tables */
+    /* Table Styles */
     table {
       border-collapse: collapse;
       margin: 1.5em 0;
@@ -56,9 +44,7 @@
       padding: 0.6em 1em;
       text-align: left;
     }
-    tr:nth-child(even) {
-      background-color: var(--table-row-light);
-    }
+    tr:nth-child(even) { background-color: var(--table-row-light); }
     th {
       background-color: #e6f2e6;
       font-weight: bold;
@@ -93,20 +79,22 @@
     .copy-btn:hover { background: #e6f3ff; }
     .copy-btn.copied { background: #d1ffd6; }
 
-    /* NOTE Boxes */
-    .note {
-      border-left: 4px solid var(--note-border-light);
-      background: var(--note-bg-light);
+    /* Callouts */
+    .callout {
+      border-left: 4px solid;
       padding: 1em;
       margin: 1em 0;
       border-radius: 6px;
     }
-    .note::before {
-      content: "💡 NOTE";
+    .callout strong {
       display: block;
-      font-weight: bold;
       margin-bottom: 0.4em;
+      font-weight: bold;
     }
+
+    .callout-note { border-color: #0077b6; background: #e6f3ff; }
+    .callout-warning { border-color: #ffb100; background: #fff4e6; }
+    .callout-tip { border-color: #00a86b; background: #e6fff3; }
 
     /* Dark Mode */
     body.dark-mode {
@@ -123,9 +111,7 @@
     body.dark-mode tr:nth-child(even) {
       background-color: var(--table-row-dark);
     }
-    body.dark-mode th {
-      background-color: #224422;
-    }
+    body.dark-mode th { background-color: #224422; }
     body.dark-mode pre {
       background: #2a2a2a;
       border-color: #444;
@@ -136,9 +122,17 @@
       color: #ddd;
       border: 1px solid #444;
     }
-    body.dark-mode .note {
-      background: var(--note-bg-dark);
-      border-left-color: var(--note-border-dark);
+    body.dark-mode .callout-note {
+      background: #253040;
+      border-color: #00bcd4;
+    }
+    body.dark-mode .callout-warning {
+      background: #403820;
+      border-color: #ffca28;
+    }
+    body.dark-mode .callout-tip {
+      background: #1f4032;
+      border-color: #22ff99;
     }
 
     /* Toggle Button */
@@ -155,9 +149,7 @@
       z-index: 1000;
       transition: background 0.3s;
     }
-    #mode-toggle:hover {
-      background: #005f8a;
-    }
+    #mode-toggle:hover { background: #005f8a; }
   </style>
 
   <!-- Mermaid + MathJax -->
@@ -181,13 +173,12 @@
   </main>
 
   <script>
-    // Dark/Light Mode toggle
-    const toggleBtn = document.getElementById("mode-toggle");
-    toggleBtn.addEventListener("click", () => {
+    // 🌗 Dark/Light Mode
+    document.getElementById("mode-toggle").addEventListener("click", () => {
       document.body.classList.toggle("dark-mode");
     });
 
-    // Copy button logic for all code blocks
+    // 📋 Copy Button for Code
     document.querySelectorAll("pre").forEach((pre) => {
       const button = document.createElement("button");
       button.className = "copy-btn";
@@ -204,6 +195,30 @@
           button.classList.remove("copied");
         }, 1500);
       });
+    });
+
+    // 🧩 Convert [!NOTE], [!TIP], [!WARNING] blockquotes into styled divs
+    document.querySelectorAll("blockquote").forEach((bq) => {
+      const text = bq.innerText.trim();
+      if (text.startsWith("[!NOTE]")) {
+        const content = text.replace("[!NOTE]", "").trim();
+        const div = document.createElement("div");
+        div.className = "callout callout-note";
+        div.innerHTML = `<strong>💡 Note</strong>${content}`;
+        bq.replaceWith(div);
+      } else if (text.startsWith("[!TIP]")) {
+        const content = text.replace("[!TIP]", "").trim();
+        const div = document.createElement("div");
+        div.className = "callout callout-tip";
+        div.innerHTML = `<strong>✅ Tip</strong>${content}`;
+        bq.replaceWith(div);
+      } else if (text.startsWith("[!WARNING]")) {
+        const content = text.replace("[!WARNING]", "").trim();
+        const div = document.createElement("div");
+        div.className = "callout callout-warning";
+        div.innerHTML = `<strong>⚠️ Warning</strong>${content}`;
+        bq.replaceWith(div);
+      }
     });
   </script>
 </body>
