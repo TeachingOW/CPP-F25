@@ -66,17 +66,21 @@
     /* Copy Button */
     .copy-btn {
       position: absolute;
-      top: 0.4rem;
-      right: 0.4rem;
-      padding: 0.25rem 0.5rem;
-      font-size: 0.8rem;
+      top: 0.5rem;
+      right: 0.5rem;
+      width: 1.8rem;
+      height: 1.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
       border-radius: 6px;
-      border: 1px solid rgba(0,0,0,0.08);
+      border: 1px solid rgba(0,0,0,0.1);
       background: rgba(255,255,255,0.95);
       cursor: pointer;
-      transition: background 0.2s;
+      transition: background 0.2s, transform 0.1s;
     }
-    .copy-btn:hover { background: #e6f3ff; }
+    .copy-btn:hover { background: #e6f3ff; transform: scale(1.05); }
     .copy-btn.copied { background: #d1ffd6; }
 
     /* Callouts */
@@ -118,7 +122,7 @@
       color: #e0e0e0;
     }
     body.dark-mode .copy-btn {
-      background: rgba(30,30,30,0.85);
+      background: rgba(40,40,40,0.9);
       color: #ddd;
       border: 1px solid #444;
     }
@@ -178,58 +182,52 @@
       document.body.classList.toggle("dark-mode");
     });
 
-    // 📋 Copy Button for Code Blocks
+    // 📋 Copy Button for Code Blocks with Icon
     document.querySelectorAll("pre").forEach((pre) => {
       const button = document.createElement("button");
       button.className = "copy-btn";
-      button.textContent = "Copy";
+      button.innerHTML = "📋"; // simple emoji icon (you can replace with SVG if you prefer)
       pre.appendChild(button);
 
       button.addEventListener("click", async () => {
         const code = pre.innerText;
         await navigator.clipboard.writeText(code);
-        button.textContent = "Copied!";
+        button.innerHTML = "✅";
         button.classList.add("copied");
         setTimeout(() => {
-          button.textContent = "Copy";
+          button.innerHTML = "📋";
           button.classList.remove("copied");
         }, 1500);
       });
     });
 
-// 🧩 Convert [!NOTE], [!TIP], [!WARNING] blockquotes into styled divs (robust version)
-document.querySelectorAll("blockquote").forEach((bq) => {
-  const firstPara = bq.querySelector("p");
-  if (!firstPara) return;
+    // 🧩 Convert [!NOTE], [!TIP], [!WARNING] blockquotes into styled divs (robust version)
+    document.querySelectorAll("blockquote").forEach((bq) => {
+      const firstPara = bq.querySelector("p");
+      if (!firstPara) return;
 
-  const text = firstPara.innerText.trim().toUpperCase();
+      const text = firstPara.innerText.trim().toUpperCase();
 
-  let type = null;
-  if (text.startsWith("[!NOTE]")) type = "note";
-  else if (text.startsWith("[!TIP]")) type = "tip";
-  else if (text.startsWith("[!WARNING]")) type = "warning";
+      let type = null;
+      if (text.startsWith("[!NOTE]")) type = "note";
+      else if (text.startsWith("[!TIP]")) type = "tip";
+      else if (text.startsWith("[!WARNING]")) type = "warning";
 
-  if (type) {
-    // Remove the marker from the first paragraph
-    firstPara.innerHTML = firstPara.innerHTML.replace(/\[!(NOTE|TIP|WARNING)\]/i, "").trim();
+      if (type) {
+        firstPara.innerHTML = firstPara.innerHTML.replace(/\[!(NOTE|TIP|WARNING)\]/i, "").trim();
+        const div = document.createElement("div");
+        div.className = `callout callout-${type}`;
 
-    // Create the callout div and copy inner HTML (to preserve lists, links, etc.)
-    const div = document.createElement("div");
-    div.className = `callout callout-${type}`;
+        const titles = {
+          note: "💡 Note",
+          tip: "✅ Tip",
+          warning: "⚠️ Warning",
+        };
 
-    const titles = {
-      note: "💡 Note",
-      tip: "✅ Tip",
-      warning: "⚠️ Warning",
-    };
-
-    div.innerHTML = `<strong>${titles[type]}</strong>${bq.innerHTML}`;
-    bq.replaceWith(div);
-  }
-});
-
-
-
+        div.innerHTML = `<strong>${titles[type]}</strong>${bq.innerHTML}`;
+        bq.replaceWith(div);
+      }
+    });
   </script>
 </body>
 </html>
