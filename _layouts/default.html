@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ page.title | default: "My GitHub Pages" }}</title>
 
-  <!-- Custom Colors with Dark/Light Mode -->
   <style>
     :root {
       --bg-light: #fdfdff;
@@ -16,15 +15,16 @@
       --heading-dark: #90ee90;
       --link-light: #0077b6;
       --link-dark: #00bcd4;
-      --mermaid-light: #e0f7fa;
-      --mermaid-dark: #2c2c3e;
       --table-border-light: #ccc;
       --table-border-dark: #555;
       --table-row-light: #f9f9f9;
       --table-row-dark: #2a2a2a;
+      --note-bg-light: #e6f3ff;
+      --note-bg-dark: #253040;
+      --note-border-light: #0077b6;
+      --note-border-dark: #00bcd4;
     }
 
-    /* Base Styles */
     body {
       font-family: system-ui, sans-serif;
       margin: 2em;
@@ -41,41 +41,71 @@
       color: var(--link-light);
       text-decoration: none;
     }
-
     a:hover {
       text-decoration: underline;
     }
 
-    /* Mermaid diagram custom style */
-    .mermaid {
-      background-color: var(--mermaid-light);
-      padding: 1em;
-      border-radius: 8px;
-      overflow-x: auto;
-      transition: background-color 0.3s;
-    }
-
-    /* TABLE STYLING */
+    /* Tables */
     table {
       border-collapse: collapse;
-      
       margin: 1.5em 0;
       font-size: 1rem;
     }
-
     th, td {
       border: 1px solid var(--table-border-light);
       padding: 0.6em 1em;
       text-align: left;
     }
-
     tr:nth-child(even) {
       background-color: var(--table-row-light);
     }
-
     th {
       background-color: #e6f2e6;
       font-weight: bold;
+    }
+
+    /* Code Blocks */
+    code, pre {
+      font-family: "Fira Code", Consolas, "Courier New", monospace;
+    }
+    pre {
+      background: #f8f8f8;
+      border-radius: 6px;
+      border: 1px solid #e5e5e5;
+      padding: 0.75em 1em;
+      overflow-x: auto;
+      position: relative;
+    }
+
+    /* Copy Button */
+    .copy-btn {
+      position: absolute;
+      top: 0.4rem;
+      right: 0.4rem;
+      padding: 0.25rem 0.5rem;
+      font-size: 0.8rem;
+      border-radius: 6px;
+      border: 1px solid rgba(0,0,0,0.08);
+      background: rgba(255,255,255,0.95);
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .copy-btn:hover { background: #e6f3ff; }
+    .copy-btn.copied { background: #d1ffd6; }
+
+    /* NOTE Boxes */
+    .note {
+      border-left: 4px solid var(--note-border-light);
+      background: var(--note-bg-light);
+      padding: 1em;
+      margin: 1em 0;
+      border-radius: 6px;
+    }
+    .note::before {
+      content: "💡 NOTE";
+      display: block;
+      font-weight: bold;
+      margin-bottom: 0.4em;
     }
 
     /* Dark Mode */
@@ -83,34 +113,32 @@
       background-color: var(--bg-dark);
       color: var(--text-dark);
     }
-
-    body.dark-mode h1,
-    body.dark-mode h2,
-    body.dark-mode h3,
-    body.dark-mode h4 {
+    body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, body.dark-mode h4 {
       color: var(--heading-dark);
     }
-
-    body.dark-mode a {
-      color: var(--link-dark);
-    }
-
-    body.dark-mode .mermaid {
-      background-color: var(--mermaid-dark);
-    }
-
-    /* Dark Mode Table */
-    body.dark-mode th, 
-    body.dark-mode td {
+    body.dark-mode a { color: var(--link-dark); }
+    body.dark-mode th, body.dark-mode td {
       border: 1px solid var(--table-border-dark);
     }
-
     body.dark-mode tr:nth-child(even) {
       background-color: var(--table-row-dark);
     }
-
     body.dark-mode th {
       background-color: #224422;
+    }
+    body.dark-mode pre {
+      background: #2a2a2a;
+      border-color: #444;
+      color: #e0e0e0;
+    }
+    body.dark-mode .copy-btn {
+      background: rgba(30,30,30,0.85);
+      color: #ddd;
+      border: 1px solid #444;
+    }
+    body.dark-mode .note {
+      background: var(--note-bg-dark);
+      border-left-color: var(--note-border-dark);
     }
 
     /* Toggle Button */
@@ -124,88 +152,58 @@
       border: none;
       border-radius: 4px;
       cursor: pointer;
-      transition: background 0.3s;
       z-index: 1000;
+      transition: background 0.3s;
     }
-
     #mode-toggle:hover {
       background: #005f8a;
     }
-code, pre {
-  font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
-  color:#333;
-}
-
-pre {
-  padding:8px 15px;
-  background: #f8f8f8;
-  border-radius:5px;
-  border:1px solid #e5e5e5;
-  overflow-x: auto;
-}
-    
   </style>
- <style>
-      /* small, unobtrusive copy button for code blocks */
-      .code-copy-wrapper { position: relative; }
-      pre { position: relative; overflow: auto; }
-      .copy-btn {
-        position: absolute;
-        top: 0.4rem;
-        right: 0.4rem;
-        padding: 0.25rem 0.5rem;
-        font-size: 0.8rem;
-        border-radius: 6px;
-        border: 1px solid rgba(0,0,0,0.08);
-        background: rgba(255,255,255,0.95);
-        cursor: pointer;
-        box-shadow: 0 1px 1px rgba(0,0,0,0.06);
-      }
-      .copy-btn:focus { outline: 2px solid #3b82f6; outline-offset: 2px; }
-      .copy-btn[aria-pressed="true"] { background: #e6ffed; border-color: #a3f7bf; }
-      .copy-tooltip {
-        position: absolute;
-        top: -2rem;
-        right: 0.4rem;
-        font-size: 0.75rem;
-        padding: 0.15rem 0.4rem;
-        border-radius: 4px;
-        background: rgba(0,0,0,0.75);
-        color: white;
-        white-space: nowrap;
-        transform-origin: top right;
-        opacity: 0;
-        transition: opacity 120ms ease;
-        pointer-events: none;
-      }
-      .copy-tooltip.show { opacity: 1; }
-    </style>
-  <!-- Mermaid.js -->
+
+  <!-- Mermaid + MathJax -->
   <script type="module">
     import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
-    mermaid.initialize({ startOnLoad: true, theme: "default" });
+    mermaid.initialize({ startOnLoad: true });
   </script>
   <script>
-window.MathJax = {
-  tex: { inlineMath: [['\\(','\\)']], displayMath: [['$$','$$']] },
-  svg: { fontCache: 'global' }
-};
-</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" defer></script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(','\\)']], displayMath: [['$$','$$']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" defer></script>
 </head>
 <body>
-  <!-- Mode Toggle Button -->
   <button id="mode-toggle">Toggle Mode</button>
 
   <main>
     {{ content }}
-
-   </main>
+  </main>
 
   <script>
-    const toggleBtn = document.getElementById('mode-toggle');
-    toggleBtn.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
+    // Dark/Light Mode toggle
+    const toggleBtn = document.getElementById("mode-toggle");
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+    });
+
+    // Copy button logic for all code blocks
+    document.querySelectorAll("pre").forEach((pre) => {
+      const button = document.createElement("button");
+      button.className = "copy-btn";
+      button.textContent = "Copy";
+      pre.appendChild(button);
+
+      button.addEventListener("click", async () => {
+        const code = pre.innerText;
+        await navigator.clipboard.writeText(code);
+        button.textContent = "Copied!";
+        button.classList.add("copied");
+        setTimeout(() => {
+          button.textContent = "Copy";
+          button.classList.remove("copied");
+        }, 1500);
+      });
     });
   </script>
 </body>

@@ -6,14 +6,10 @@ File handling in C++ is done using the `<fstream>` and `<filesystem>` libraries.
 The `<fstream>` library handles reading and writing, while `<filesystem>` (C++17+) handles directory and file management.
 
 > [!NOTE]
-> This is a note block. It contains important information for the reader.
- You can add multiple lines within the note block by starting each new line with a `>`.
-
-You can reference  the following videos:
-
-- Read and Write Text data https://www.youtube.com/watch?v=VsDGQug-5rA
-- Read and Write Binary data https://www.youtube.com/watch?v=pnoEgNt9B4E
-- Read and Write struct https://www.youtube.com/watch?v=lmcK9_0l73Y 
+> You can reference  the following videos:
+> - Read and Write Text data https://www.youtube.com/watch?v=VsDGQug-5rA
+> - Read and Write Binary data https://www.youtube.com/watch?v=pnoEgNt9B4E
+> - Read and Write struct https://www.youtube.com/watch?v=lmcK9_0l73Y 
 
 
 ---
