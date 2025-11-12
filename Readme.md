@@ -2,12 +2,18 @@
 
 ## Topics
 
+### OOP
+
 - [PillarsofOOP](topics/PillarsofOOP)
+- [OOP Principles](tutorials/OOP) 
+### C++
 - [stl](topics/stl)
+- [stl II](topics/stl2)
+
 - [Pointer](topics/pointers)
 - [Rule of Three](topics/ruleofThree)
 - [Template](topics/templates)
-- [stl II](topics/stl2)
+
 - [File](topics/file)
 
 
@@ -56,3 +62,5 @@ Circular Buffer
 
 
 
+## Interesting links
+- [Google Guide](https://google.github.io/styleguide/cppguide.html)
