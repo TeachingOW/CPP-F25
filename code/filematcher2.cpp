@@ -9,7 +9,7 @@ using namespace std;
 class FileDiscovery
 {
 public:
-    static vector<string> find(vector<string> paths)
+    static vector<string> find(vector<string> &paths)
     {
         set<string> out;
         for (auto path : paths)
@@ -54,7 +54,7 @@ public:
 class ht
 {
 public:
-    void insert(unsigned int k, string v)
+    void insert(unsigned long k, string v)
     {
         if (ht2.find(k) == ht2.end())
         {
@@ -63,7 +63,7 @@ public:
         }
         ht2[k].push_back(v);
     }
-    vector<string>& find(unsigned int k)
+    vector<string>& find(unsigned long k)
     {
         return ht2[k];
     }
