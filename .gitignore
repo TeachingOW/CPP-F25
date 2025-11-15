@@ -1,7 +1,7 @@
 *.o
 a.out
 .vscode/
-
+_deps/
 build/
 out/
 cmake-build-debug/
