@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/workspaces/CPP-F25/code/unittest/_deps/cpputest-subbuild/CMakeFiles/cpputest-populate"
+		},
+		{
+			"file" : "/workspaces/CPP-F25/code/unittest/_deps/cpputest-subbuild/CMakeFiles/cpputest-populate.rule"
+		},
+		{
+			"file" : "/workspaces/CPP-F25/code/unittest/_deps/cpputest-subbuild/CMakeFiles/cpputest-populate-complete.rule"
+		},
+		{
+			"file" : "/workspaces/CPP-F25/code/unittest/_deps/cpputest-subbuild/cpputest-populate-prefix/src/cpputest-populate-stamp/cpputest-populate-build.rule"
+		},
+		{
+			"file" : "/workspaces/CPP-F25/code/unittest/_deps/cpputest-subbuild/cpputest-populate-prefix/src/cpputest-populate-stamp/cpputest-populate-configure.rule"
+		},
+		{
+			"file" : "/workspaces/CPP-F25/code/unittest/_deps/cpputest-subbuild/cpputest-populate-prefix/src/cpputest-populate-stamp/cpputest-populate-download.rule"
+		},
+		{
+			"file" : "/workspaces/CPP-F25/code/unittest/_deps/cpputest-subbuild/cpputest-populate-prefix/src/cpputest-populate-stamp/cpputest-populate-install.rule"
+		},
+		{
+			"file" : "/workspaces/CPP-F25/code/unittest/_deps/cpputest-subbuild/cpputest-populate-prefix/src/cpputest-populate-stamp/cpputest-populate-mkdir.rule"
+		},
+		{
+			"file" : "/workspaces/CPP-F25/code/unittest/_deps/cpputest-subbuild/cpputest-populate-prefix/src/cpputest-populate-stamp/cpputest-populate-patch.rule"
+		},
+		{
+			"file" : "/workspaces/CPP-F25/code/unittest/_deps/cpputest-subbuild/cpputest-populate-prefix/src/cpputest-populate-stamp/cpputest-populate-test.rule"
+		},
+		{
+			"file" : "/workspaces/CPP-F25/code/unittest/_deps/cpputest-subbuild/cpputest-populate-prefix/src/cpputest-populate-stamp/cpputest-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"cpputest-populate"
+		],
+		"name" : "cpputest-populate"
+	}
+}

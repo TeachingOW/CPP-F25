@@ -1,0 +1,1 @@
+/usr/bin/c++ -O2 -g -DNDEBUG CMakeFiles/calculator_tests.dir/test_calculator.cpp.o -o calculator_tests  libcalculator.a _deps/cpputest-build/src/CppUTest/libCppUTest.a 

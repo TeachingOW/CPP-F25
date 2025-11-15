@@ -1,0 +1,2023 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Linux - 6.8.0-1030-azure - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /workspaces/CPP-F25/code/unittest/CMakeFiles/3.28.3/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /workspaces/CPP-F25/code/unittest/CMakeFiles/3.28.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-UYfPHJ"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-UYfPHJ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-UYfPHJ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e4bf4/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e4bf4.dir/build.make CMakeFiles/cmTC_e4bf4.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-UYfPHJ'
+        Building C object CMakeFiles/cmTC_e4bf4.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_e4bf4.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e4bf4.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e4bf4.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_e4bf4.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccwmbYTl.s
+        GNU C17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-linux-gnu/13/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 38987c28e967c64056a6454abdef726e
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e4bf4.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e4bf4.dir/'
+         as -v --64 -o CMakeFiles/cmTC_e4bf4.dir/CMakeCCompilerABI.c.o /tmp/ccwmbYTl.s
+        GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e4bf4.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e4bf4.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_e4bf4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e4bf4.dir/link.txt --verbose=1
+        /usr/bin/cc  -v CMakeFiles/cmTC_e4bf4.dir/CMakeCCompilerABI.c.o -o cmTC_e4bf4 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e4bf4' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e4bf4.'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccWF6E6h.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_e4bf4 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_e4bf4.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e4bf4' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e4bf4.'
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-UYfPHJ'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/13/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/13/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-UYfPHJ']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e4bf4/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_e4bf4.dir/build.make CMakeFiles/cmTC_e4bf4.dir/build]
+        ignore line: [gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-UYfPHJ']
+        ignore line: [Building C object CMakeFiles/cmTC_e4bf4.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_e4bf4.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e4bf4.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e4bf4.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_e4bf4.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccwmbYTl.s]
+        ignore line: [GNU C17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/13/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 38987c28e967c64056a6454abdef726e]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e4bf4.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e4bf4.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_e4bf4.dir/CMakeCCompilerABI.c.o /tmp/ccwmbYTl.s]
+        ignore line: [GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e4bf4.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e4bf4.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_e4bf4]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e4bf4.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_e4bf4.dir/CMakeCCompilerABI.c.o -o cmTC_e4bf4 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e4bf4' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e4bf4.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/ccWF6E6h.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_e4bf4 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_e4bf4.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccWF6E6h.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_e4bf4] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..]
+          arg [CMakeFiles/cmTC_e4bf4.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-a9xpWF"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-a9xpWF"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-a9xpWF'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_85150/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_85150.dir/build.make CMakeFiles/cmTC_85150.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-a9xpWF'
+        Building CXX object CMakeFiles/cmTC_85150.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_85150.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_85150.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_85150.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_85150.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cccOdN5N.s
+        GNU C++17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/13"
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/include/c++/13
+         /usr/include/x86_64-linux-gnu/c++/13
+         /usr/include/c++/13/backward
+         /usr/lib/gcc/x86_64-linux-gnu/13/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: c81c05345ce537099dafd5580045814a
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_85150.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_85150.dir/'
+         as -v --64 -o CMakeFiles/cmTC_85150.dir/CMakeCXXCompilerABI.cpp.o /tmp/cccOdN5N.s
+        GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_85150.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_85150.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_85150
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_85150.dir/link.txt --verbose=1
+        /usr/bin/c++  -v CMakeFiles/cmTC_85150.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_85150 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_85150' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_85150.'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cctfB2V1.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_85150 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_85150.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_85150' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_85150.'
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-a9xpWF'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/include/c++/13]
+          add: [/usr/include/x86_64-linux-gnu/c++/13]
+          add: [/usr/include/c++/13/backward]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/include/c++/13] ==> [/usr/include/c++/13]
+        collapse include dir [/usr/include/x86_64-linux-gnu/c++/13] ==> [/usr/include/x86_64-linux-gnu/c++/13]
+        collapse include dir [/usr/include/c++/13/backward] ==> [/usr/include/c++/13/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/13/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/13;/usr/include/x86_64-linux-gnu/c++/13;/usr/include/c++/13/backward;/usr/lib/gcc/x86_64-linux-gnu/13/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-a9xpWF']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_85150/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_85150.dir/build.make CMakeFiles/cmTC_85150.dir/build]
+        ignore line: [gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-a9xpWF']
+        ignore line: [Building CXX object CMakeFiles/cmTC_85150.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_85150.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_85150.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_85150.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_85150.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cccOdN5N.s]
+        ignore line: [GNU C++17 (Ubuntu 13.3.0-6ubuntu2~24.04) version 13.3.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/13"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/include/c++/13]
+        ignore line: [ /usr/include/x86_64-linux-gnu/c++/13]
+        ignore line: [ /usr/include/c++/13/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/13/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: c81c05345ce537099dafd5580045814a]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_85150.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_85150.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_85150.dir/CMakeCXXCompilerABI.cpp.o /tmp/cccOdN5N.s]
+        ignore line: [GNU assembler version 2.42 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.42]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_85150.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_85150.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_85150]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_85150.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_85150.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_85150 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 13.3.0-6ubuntu2~24.04' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-13-fG75Ri/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_85150' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_85150.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cctfB2V1.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_85150 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_85150.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cctfB2V1.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_85150] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..]
+          arg [CMakeFiles/cmTC_85150.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "_deps/cpputest-src/CMakeLists.txt:22 (check_function_exists)"
+    checks:
+      - "Looking for fork"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-GUTc5F"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-GUTc5F"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "HAVE_FORK"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-GUTc5F'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a8441/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a8441.dir/build.make CMakeFiles/cmTC_a8441.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-GUTc5F'
+        Building C object CMakeFiles/cmTC_a8441.dir/CheckFunctionExists.c.o
+        /usr/bin/cc  -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-GUTc5F/unistd.h -DCHECK_FUNCTION_EXISTS=fork -o CMakeFiles/cmTC_a8441.dir/CheckFunctionExists.c.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-GUTc5F/CheckFunctionExists.c
+        <command-line>: warning: conflicting types for built-in function ‘fork’; expected ‘int(void)’ [-Wbuiltin-declaration-mismatch]
+        /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-GUTc5F/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+            7 |   CHECK_FUNCTION_EXISTS(void);
+              |   ^~~~~~~~~~~~~~~~~~~~~
+        Linking C executable cmTC_a8441
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8441.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=fork -rdynamic CMakeFiles/cmTC_a8441.dir/CheckFunctionExists.c.o -o cmTC_a8441 
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-GUTc5F'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "_deps/cpputest-src/CMakeLists.txt:27 (check_function_exists)"
+    checks:
+      - "Looking for gettimeofday"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-YALh8v"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-YALh8v"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "HAVE_GETTIMEOFDAY"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-YALh8v'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1b77b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_1b77b.dir/build.make CMakeFiles/cmTC_1b77b.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-YALh8v'
+        Building C object CMakeFiles/cmTC_1b77b.dir/CheckFunctionExists.c.o
+        /usr/bin/cc  -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-YALh8v/unistd.h -DCHECK_FUNCTION_EXISTS=gettimeofday -o CMakeFiles/cmTC_1b77b.dir/CheckFunctionExists.c.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-YALh8v/CheckFunctionExists.c
+        Linking C executable cmTC_1b77b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1b77b.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gettimeofday -rdynamic CMakeFiles/cmTC_1b77b.dir/CheckFunctionExists.c.o -o cmTC_1b77b 
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-YALh8v'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "_deps/cpputest-src/CMakeLists.txt:32 (check_function_exists)"
+    checks:
+      - "Looking for pthread_mutex_lock"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-WnBoN2"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-WnBoN2"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "HAVE_PTHREAD_MUTEX_LOCK"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-WnBoN2'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9e112/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9e112.dir/build.make CMakeFiles/cmTC_9e112.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-WnBoN2'
+        Building C object CMakeFiles/cmTC_9e112.dir/CheckFunctionExists.c.o
+        /usr/bin/cc  -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-WnBoN2/unistd.h -DCHECK_FUNCTION_EXISTS=pthread_mutex_lock -o CMakeFiles/cmTC_9e112.dir/CheckFunctionExists.c.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-WnBoN2/CheckFunctionExists.c
+        Linking C executable cmTC_9e112
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9e112.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_mutex_lock -rdynamic CMakeFiles/cmTC_9e112.dir/CheckFunctionExists.c.o -o cmTC_9e112 
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-WnBoN2'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "_deps/cpputest-src/CMakeLists.txt:37 (check_function_exists)"
+    checks:
+      - "Looking for strdup"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-8FFLzZ"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-8FFLzZ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "HAVE_STRDUP"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-8FFLzZ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_97320/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_97320.dir/build.make CMakeFiles/cmTC_97320.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-8FFLzZ'
+        Building C object CMakeFiles/cmTC_97320.dir/CheckFunctionExists.c.o
+        /usr/bin/cc  -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-8FFLzZ/unistd.h -DCHECK_FUNCTION_EXISTS=strdup -o CMakeFiles/cmTC_97320.dir/CheckFunctionExists.c.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-8FFLzZ/CheckFunctionExists.c
+        <command-line>: warning: conflicting types for built-in function ‘strdup’; expected ‘char *(const char *)’ [-Wbuiltin-declaration-mismatch]
+        /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-8FFLzZ/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+            7 |   CHECK_FUNCTION_EXISTS(void);
+              |   ^~~~~~~~~~~~~~~~~~~~~
+        Linking C executable cmTC_97320
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_97320.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=strdup -rdynamic CMakeFiles/cmTC_97320.dir/CheckFunctionExists.c.o -o cmTC_97320 
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-8FFLzZ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:10 (check_c_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:76 (check_and_append_c_warning_flags)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestConfigurationOptions.cmake:21 (include)"
+      - "_deps/cpputest-src/CMakeLists.txt:91 (include)"
+    checks:
+      - "Performing Test WARNING_C_FLAG_Weverything"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-MjIf81"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-MjIf81"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/CPP-F25/code/unittest/_deps/cpputest-src/cmake/Modules"
+    buildResult:
+      variable: "WARNING_C_FLAG_Weverything"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-MjIf81'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_07128/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_07128.dir/build.make CMakeFiles/cmTC_07128.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-MjIf81'
+        Building C object CMakeFiles/cmTC_07128.dir/src.c.o
+        /usr/bin/cc -DWARNING_C_FLAG_Weverything -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-MjIf81/unistd.h -Weverything -o CMakeFiles/cmTC_07128.dir/src.c.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-MjIf81/src.c
+        cc: error: unrecognized command-line option '-Weverything'
+        gmake[1]: *** [CMakeFiles/cmTC_07128.dir/build.make:78: CMakeFiles/cmTC_07128.dir/src.c.o] Error 1
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-MjIf81'
+        gmake: *** [Makefile:127: cmTC_07128/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:10 (check_c_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:76 (check_and_append_c_warning_flags)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestConfigurationOptions.cmake:21 (include)"
+      - "_deps/cpputest-src/CMakeLists.txt:91 (include)"
+    checks:
+      - "Performing Test WARNING_C_FLAG_Wall"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-dhSg00"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-dhSg00"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/CPP-F25/code/unittest/_deps/cpputest-src/cmake/Modules"
+    buildResult:
+      variable: "WARNING_C_FLAG_Wall"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-dhSg00'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a69bd/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a69bd.dir/build.make CMakeFiles/cmTC_a69bd.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-dhSg00'
+        Building C object CMakeFiles/cmTC_a69bd.dir/src.c.o
+        /usr/bin/cc -DWARNING_C_FLAG_Wall -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-dhSg00/unistd.h -Wall -o CMakeFiles/cmTC_a69bd.dir/src.c.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-dhSg00/src.c
+        Linking C executable cmTC_a69bd
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a69bd.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_a69bd.dir/src.c.o -o cmTC_a69bd 
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-dhSg00'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:10 (check_c_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:76 (check_and_append_c_warning_flags)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestConfigurationOptions.cmake:21 (include)"
+      - "_deps/cpputest-src/CMakeLists.txt:91 (include)"
+    checks:
+      - "Performing Test WARNING_C_FLAG_Wextra"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-jaSg0m"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-jaSg0m"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/CPP-F25/code/unittest/_deps/cpputest-src/cmake/Modules"
+    buildResult:
+      variable: "WARNING_C_FLAG_Wextra"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-jaSg0m'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_240a6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_240a6.dir/build.make CMakeFiles/cmTC_240a6.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-jaSg0m'
+        Building C object CMakeFiles/cmTC_240a6.dir/src.c.o
+        /usr/bin/cc -DWARNING_C_FLAG_Wextra -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-jaSg0m/unistd.h -Wextra -o CMakeFiles/cmTC_240a6.dir/src.c.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-jaSg0m/src.c
+        Linking C executable cmTC_240a6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_240a6.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_240a6.dir/src.c.o -o cmTC_240a6 
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-jaSg0m'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:10 (check_c_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:76 (check_and_append_c_warning_flags)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestConfigurationOptions.cmake:21 (include)"
+      - "_deps/cpputest-src/CMakeLists.txt:91 (include)"
+    checks:
+      - "Performing Test WARNING_C_FLAG_pedantic"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-0AkYtW"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-0AkYtW"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/CPP-F25/code/unittest/_deps/cpputest-src/cmake/Modules"
+    buildResult:
+      variable: "WARNING_C_FLAG_pedantic"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-0AkYtW'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ed918/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ed918.dir/build.make CMakeFiles/cmTC_ed918.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-0AkYtW'
+        Building C object CMakeFiles/cmTC_ed918.dir/src.c.o
+        /usr/bin/cc -DWARNING_C_FLAG_pedantic -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-0AkYtW/unistd.h -pedantic -o CMakeFiles/cmTC_ed918.dir/src.c.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-0AkYtW/src.c
+        Linking C executable cmTC_ed918
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed918.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_ed918.dir/src.c.o -o cmTC_ed918 
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-0AkYtW'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:10 (check_c_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:76 (check_and_append_c_warning_flags)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestConfigurationOptions.cmake:21 (include)"
+      - "_deps/cpputest-src/CMakeLists.txt:91 (include)"
+    checks:
+      - "Performing Test WARNING_C_FLAG_Wshadow"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-KD7Rxw"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-KD7Rxw"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/CPP-F25/code/unittest/_deps/cpputest-src/cmake/Modules"
+    buildResult:
+      variable: "WARNING_C_FLAG_Wshadow"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-KD7Rxw'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_61f20/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_61f20.dir/build.make CMakeFiles/cmTC_61f20.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-KD7Rxw'
+        Building C object CMakeFiles/cmTC_61f20.dir/src.c.o
+        /usr/bin/cc -DWARNING_C_FLAG_Wshadow -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-KD7Rxw/unistd.h -Wshadow -o CMakeFiles/cmTC_61f20.dir/src.c.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-KD7Rxw/src.c
+        Linking C executable cmTC_61f20
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_61f20.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_61f20.dir/src.c.o -o cmTC_61f20 
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-KD7Rxw'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:10 (check_c_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:76 (check_and_append_c_warning_flags)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestConfigurationOptions.cmake:21 (include)"
+      - "_deps/cpputest-src/CMakeLists.txt:91 (include)"
+    checks:
+      - "Performing Test WARNING_C_FLAG_Wswitch-default"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-9qWhgW"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-9qWhgW"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/CPP-F25/code/unittest/_deps/cpputest-src/cmake/Modules"
+    buildResult:
+      variable: "WARNING_C_FLAG_Wswitch-default"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-9qWhgW'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_36109/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_36109.dir/build.make CMakeFiles/cmTC_36109.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-9qWhgW'
+        Building C object CMakeFiles/cmTC_36109.dir/src.c.o
+        /usr/bin/cc  -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-9qWhgW/unistd.h -DWARNING_C_FLAG_Wswitch-default -Wswitch-default -o CMakeFiles/cmTC_36109.dir/src.c.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-9qWhgW/src.c
+        <command-line>: warning: ISO C99 requires whitespace after the macro name
+        Linking C executable cmTC_36109
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_36109.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_36109.dir/src.c.o -o cmTC_36109 
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-9qWhgW'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:10 (check_c_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:76 (check_and_append_c_warning_flags)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestConfigurationOptions.cmake:21 (include)"
+      - "_deps/cpputest-src/CMakeLists.txt:91 (include)"
+    checks:
+      - "Performing Test WARNING_C_FLAG_Wswitch-enum"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-u3R5Ob"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-u3R5Ob"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/CPP-F25/code/unittest/_deps/cpputest-src/cmake/Modules"
+    buildResult:
+      variable: "WARNING_C_FLAG_Wswitch-enum"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-u3R5Ob'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_bab93/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_bab93.dir/build.make CMakeFiles/cmTC_bab93.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-u3R5Ob'
+        Building C object CMakeFiles/cmTC_bab93.dir/src.c.o
+        /usr/bin/cc  -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-u3R5Ob/unistd.h -DWARNING_C_FLAG_Wswitch-enum -Wswitch-enum -o CMakeFiles/cmTC_bab93.dir/src.c.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-u3R5Ob/src.c
+        <command-line>: warning: ISO C99 requires whitespace after the macro name
+        Linking C executable cmTC_bab93
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bab93.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_bab93.dir/src.c.o -o cmTC_bab93 
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-u3R5Ob'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:10 (check_c_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:76 (check_and_append_c_warning_flags)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestConfigurationOptions.cmake:21 (include)"
+      - "_deps/cpputest-src/CMakeLists.txt:91 (include)"
+    checks:
+      - "Performing Test WARNING_C_FLAG_Wconversion"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-2xfXzq"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-2xfXzq"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/CPP-F25/code/unittest/_deps/cpputest-src/cmake/Modules"
+    buildResult:
+      variable: "WARNING_C_FLAG_Wconversion"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-2xfXzq'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7ffe9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7ffe9.dir/build.make CMakeFiles/cmTC_7ffe9.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-2xfXzq'
+        Building C object CMakeFiles/cmTC_7ffe9.dir/src.c.o
+        /usr/bin/cc -DWARNING_C_FLAG_Wconversion -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-2xfXzq/unistd.h -Wconversion -o CMakeFiles/cmTC_7ffe9.dir/src.c.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-2xfXzq/src.c
+        Linking C executable cmTC_7ffe9
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7ffe9.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_7ffe9.dir/src.c.o -o cmTC_7ffe9 
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-2xfXzq'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:10 (check_c_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:76 (check_and_append_c_warning_flags)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestConfigurationOptions.cmake:21 (include)"
+      - "_deps/cpputest-src/CMakeLists.txt:91 (include)"
+    checks:
+      - "Performing Test WARNING_C_FLAG_Wsign-conversion"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-CJYJfg"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-CJYJfg"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/CPP-F25/code/unittest/_deps/cpputest-src/cmake/Modules"
+    buildResult:
+      variable: "WARNING_C_FLAG_Wsign-conversion"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-CJYJfg'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9674a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9674a.dir/build.make CMakeFiles/cmTC_9674a.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-CJYJfg'
+        Building C object CMakeFiles/cmTC_9674a.dir/src.c.o
+        /usr/bin/cc  -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-CJYJfg/unistd.h -DWARNING_C_FLAG_Wsign-conversion -Wsign-conversion -o CMakeFiles/cmTC_9674a.dir/src.c.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-CJYJfg/src.c
+        <command-line>: warning: ISO C99 requires whitespace after the macro name
+        Linking C executable cmTC_9674a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9674a.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_9674a.dir/src.c.o -o cmTC_9674a 
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-CJYJfg'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:10 (check_c_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:76 (check_and_append_c_warning_flags)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestConfigurationOptions.cmake:21 (include)"
+      - "_deps/cpputest-src/CMakeLists.txt:91 (include)"
+    checks:
+      - "Performing Test WARNING_C_FLAG_Wno-padded"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-J0iIBz"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-J0iIBz"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/CPP-F25/code/unittest/_deps/cpputest-src/cmake/Modules"
+    buildResult:
+      variable: "WARNING_C_FLAG_Wno-padded"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-J0iIBz'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_114b1/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_114b1.dir/build.make CMakeFiles/cmTC_114b1.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-J0iIBz'
+        Building C object CMakeFiles/cmTC_114b1.dir/src.c.o
+        /usr/bin/cc  -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-J0iIBz/unistd.h -DWARNING_C_FLAG_Wno-padded -Wno-padded -o CMakeFiles/cmTC_114b1.dir/src.c.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-J0iIBz/src.c
+        <command-line>: warning: ISO C99 requires whitespace after the macro name
+        Linking C executable cmTC_114b1
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_114b1.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_114b1.dir/src.c.o -o cmTC_114b1 
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-J0iIBz'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:10 (check_c_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:76 (check_and_append_c_warning_flags)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestConfigurationOptions.cmake:21 (include)"
+      - "_deps/cpputest-src/CMakeLists.txt:91 (include)"
+    checks:
+      - "Performing Test WARNING_C_FLAG_Wno-disabled-macro-expansion"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-gdO5Gs"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-gdO5Gs"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/CPP-F25/code/unittest/_deps/cpputest-src/cmake/Modules"
+    buildResult:
+      variable: "WARNING_C_FLAG_Wno-disabled-macro-expansion"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-gdO5Gs'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_da9e6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_da9e6.dir/build.make CMakeFiles/cmTC_da9e6.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-gdO5Gs'
+        Building C object CMakeFiles/cmTC_da9e6.dir/src.c.o
+        /usr/bin/cc  -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-gdO5Gs/unistd.h -DWARNING_C_FLAG_Wno-disabled-macro-expansion -Wno-disabled-macro-expansion -o CMakeFiles/cmTC_da9e6.dir/src.c.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-gdO5Gs/src.c
+        <command-line>: warning: ISO C99 requires whitespace after the macro name
+        cc1: note: unrecognized command-line option '-Wno-disabled-macro-expansion' may have been intended to silence earlier diagnostics
+        Linking C executable cmTC_da9e6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_da9e6.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_da9e6.dir/src.c.o -o cmTC_da9e6 
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-gdO5Gs'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:10 (check_c_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:76 (check_and_append_c_warning_flags)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestConfigurationOptions.cmake:21 (include)"
+      - "_deps/cpputest-src/CMakeLists.txt:91 (include)"
+    checks:
+      - "Performing Test WARNING_C_FLAG_Wno-reserved-id-macro"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-9n3fIz"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-9n3fIz"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/CPP-F25/code/unittest/_deps/cpputest-src/cmake/Modules"
+    buildResult:
+      variable: "WARNING_C_FLAG_Wno-reserved-id-macro"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-9n3fIz'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_29fdb/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_29fdb.dir/build.make CMakeFiles/cmTC_29fdb.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-9n3fIz'
+        Building C object CMakeFiles/cmTC_29fdb.dir/src.c.o
+        /usr/bin/cc  -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-9n3fIz/unistd.h -DWARNING_C_FLAG_Wno-reserved-id-macro -Wno-reserved-id-macro -o CMakeFiles/cmTC_29fdb.dir/src.c.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-9n3fIz/src.c
+        <command-line>: warning: ISO C99 requires whitespace after the macro name
+        cc1: note: unrecognized command-line option '-Wno-reserved-id-macro' may have been intended to silence earlier diagnostics
+        Linking C executable cmTC_29fdb
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_29fdb.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_29fdb.dir/src.c.o -o cmTC_29fdb 
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-9n3fIz'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:10 (check_c_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:76 (check_and_append_c_warning_flags)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestConfigurationOptions.cmake:21 (include)"
+      - "_deps/cpputest-src/CMakeLists.txt:91 (include)"
+    checks:
+      - "Performing Test WARNING_C_FLAG_Wno-keyword-macro"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-9JfEGL"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-9JfEGL"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/CPP-F25/code/unittest/_deps/cpputest-src/cmake/Modules"
+    buildResult:
+      variable: "WARNING_C_FLAG_Wno-keyword-macro"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-9JfEGL'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a5a4f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a5a4f.dir/build.make CMakeFiles/cmTC_a5a4f.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-9JfEGL'
+        Building C object CMakeFiles/cmTC_a5a4f.dir/src.c.o
+        /usr/bin/cc  -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-9JfEGL/unistd.h -DWARNING_C_FLAG_Wno-keyword-macro -Wno-keyword-macro -o CMakeFiles/cmTC_a5a4f.dir/src.c.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-9JfEGL/src.c
+        <command-line>: warning: ISO C99 requires whitespace after the macro name
+        cc1: note: unrecognized command-line option '-Wno-keyword-macro' may have been intended to silence earlier diagnostics
+        Linking C executable cmTC_a5a4f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a5a4f.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_a5a4f.dir/src.c.o -o cmTC_a5a4f 
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-9JfEGL'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:10 (check_c_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:76 (check_and_append_c_warning_flags)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestConfigurationOptions.cmake:21 (include)"
+      - "_deps/cpputest-src/CMakeLists.txt:91 (include)"
+    checks:
+      - "Performing Test WARNING_C_FLAG_Wno-long-long"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-TbAqMQ"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-TbAqMQ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/CPP-F25/code/unittest/_deps/cpputest-src/cmake/Modules"
+    buildResult:
+      variable: "WARNING_C_FLAG_Wno-long-long"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-TbAqMQ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8cf71/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8cf71.dir/build.make CMakeFiles/cmTC_8cf71.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-TbAqMQ'
+        Building C object CMakeFiles/cmTC_8cf71.dir/src.c.o
+        /usr/bin/cc  -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-TbAqMQ/unistd.h -DWARNING_C_FLAG_Wno-long-long -Wno-long-long -o CMakeFiles/cmTC_8cf71.dir/src.c.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-TbAqMQ/src.c
+        <command-line>: warning: ISO C99 requires whitespace after the macro name
+        Linking C executable cmTC_8cf71
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8cf71.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_8cf71.dir/src.c.o -o cmTC_8cf71 
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-TbAqMQ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCCompilerFlag.cmake:51 (cmake_check_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:10 (check_c_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:77 (check_and_append_c_warning_flags)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestConfigurationOptions.cmake:21 (include)"
+      - "_deps/cpputest-src/CMakeLists.txt:91 (include)"
+    checks:
+      - "Performing Test WARNING_C_FLAG_Wstrict-prototypes"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-Fowycq"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-Fowycq"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/CPP-F25/code/unittest/_deps/cpputest-src/cmake/Modules"
+    buildResult:
+      variable: "WARNING_C_FLAG_Wstrict-prototypes"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-Fowycq'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4a5ae/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4a5ae.dir/build.make CMakeFiles/cmTC_4a5ae.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-Fowycq'
+        Building C object CMakeFiles/cmTC_4a5ae.dir/src.c.o
+        /usr/bin/cc  -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-Fowycq/unistd.h -DWARNING_C_FLAG_Wstrict-prototypes -Wstrict-prototypes -o CMakeFiles/cmTC_4a5ae.dir/src.c.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-Fowycq/src.c
+        <command-line>: warning: ISO C99 requires whitespace after the macro name
+        Linking C executable cmTC_4a5ae
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4a5ae.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_4a5ae.dir/src.c.o -o cmTC_4a5ae 
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-Fowycq'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:20 (check_cxx_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:78 (check_and_append_cxx_warning_flags)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestConfigurationOptions.cmake:21 (include)"
+      - "_deps/cpputest-src/CMakeLists.txt:91 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_Weverything"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-G7jGbM"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-G7jGbM"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/CPP-F25/code/unittest/_deps/cpputest-src/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_Weverything"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-G7jGbM'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fd3c0/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_fd3c0.dir/build.make CMakeFiles/cmTC_fd3c0.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-G7jGbM'
+        Building CXX object CMakeFiles/cmTC_fd3c0.dir/src.cxx.o
+        /usr/bin/c++ -DWARNING_CXX_FLAG_Weverything -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-G7jGbM/unistd.h -Weverything -o CMakeFiles/cmTC_fd3c0.dir/src.cxx.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-G7jGbM/src.cxx
+        c++: error: unrecognized command-line option '-Weverything'
+        gmake[1]: *** [CMakeFiles/cmTC_fd3c0.dir/build.make:78: CMakeFiles/cmTC_fd3c0.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-G7jGbM'
+        gmake: *** [Makefile:127: cmTC_fd3c0/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:20 (check_cxx_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:78 (check_and_append_cxx_warning_flags)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestConfigurationOptions.cmake:21 (include)"
+      - "_deps/cpputest-src/CMakeLists.txt:91 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_Wall"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-dHvRVJ"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-dHvRVJ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/CPP-F25/code/unittest/_deps/cpputest-src/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_Wall"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-dHvRVJ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4eb65/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4eb65.dir/build.make CMakeFiles/cmTC_4eb65.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-dHvRVJ'
+        Building CXX object CMakeFiles/cmTC_4eb65.dir/src.cxx.o
+        /usr/bin/c++ -DWARNING_CXX_FLAG_Wall -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-dHvRVJ/unistd.h -Wall -o CMakeFiles/cmTC_4eb65.dir/src.cxx.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-dHvRVJ/src.cxx
+        Linking CXX executable cmTC_4eb65
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4eb65.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_4eb65.dir/src.cxx.o -o cmTC_4eb65 
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-dHvRVJ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:20 (check_cxx_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:78 (check_and_append_cxx_warning_flags)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestConfigurationOptions.cmake:21 (include)"
+      - "_deps/cpputest-src/CMakeLists.txt:91 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_Wextra"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-vYq9Ru"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-vYq9Ru"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/CPP-F25/code/unittest/_deps/cpputest-src/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_Wextra"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-vYq9Ru'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e068b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e068b.dir/build.make CMakeFiles/cmTC_e068b.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-vYq9Ru'
+        Building CXX object CMakeFiles/cmTC_e068b.dir/src.cxx.o
+        /usr/bin/c++ -DWARNING_CXX_FLAG_Wextra -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-vYq9Ru/unistd.h -Wextra -o CMakeFiles/cmTC_e068b.dir/src.cxx.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-vYq9Ru/src.cxx
+        Linking CXX executable cmTC_e068b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e068b.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_e068b.dir/src.cxx.o -o cmTC_e068b 
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-vYq9Ru'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:20 (check_cxx_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:78 (check_and_append_cxx_warning_flags)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestConfigurationOptions.cmake:21 (include)"
+      - "_deps/cpputest-src/CMakeLists.txt:91 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_pedantic"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-hVcsOh"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-hVcsOh"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/CPP-F25/code/unittest/_deps/cpputest-src/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_pedantic"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-hVcsOh'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8b5ce/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8b5ce.dir/build.make CMakeFiles/cmTC_8b5ce.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-hVcsOh'
+        Building CXX object CMakeFiles/cmTC_8b5ce.dir/src.cxx.o
+        /usr/bin/c++ -DWARNING_CXX_FLAG_pedantic -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-hVcsOh/unistd.h -pedantic -o CMakeFiles/cmTC_8b5ce.dir/src.cxx.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-hVcsOh/src.cxx
+        Linking CXX executable cmTC_8b5ce
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8b5ce.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_8b5ce.dir/src.cxx.o -o cmTC_8b5ce 
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-hVcsOh'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:20 (check_cxx_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:78 (check_and_append_cxx_warning_flags)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestConfigurationOptions.cmake:21 (include)"
+      - "_deps/cpputest-src/CMakeLists.txt:91 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_Wshadow"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-1kSMCN"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-1kSMCN"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/CPP-F25/code/unittest/_deps/cpputest-src/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_Wshadow"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-1kSMCN'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_32ee5/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_32ee5.dir/build.make CMakeFiles/cmTC_32ee5.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-1kSMCN'
+        Building CXX object CMakeFiles/cmTC_32ee5.dir/src.cxx.o
+        /usr/bin/c++ -DWARNING_CXX_FLAG_Wshadow -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-1kSMCN/unistd.h -Wshadow -o CMakeFiles/cmTC_32ee5.dir/src.cxx.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-1kSMCN/src.cxx
+        Linking CXX executable cmTC_32ee5
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_32ee5.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_32ee5.dir/src.cxx.o -o cmTC_32ee5 
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-1kSMCN'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:20 (check_cxx_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:78 (check_and_append_cxx_warning_flags)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestConfigurationOptions.cmake:21 (include)"
+      - "_deps/cpputest-src/CMakeLists.txt:91 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_Wswitch-default"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-3DuT3u"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-3DuT3u"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/CPP-F25/code/unittest/_deps/cpputest-src/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_Wswitch-default"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-3DuT3u'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f32e1/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f32e1.dir/build.make CMakeFiles/cmTC_f32e1.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-3DuT3u'
+        Building CXX object CMakeFiles/cmTC_f32e1.dir/src.cxx.o
+        /usr/bin/c++  -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-3DuT3u/unistd.h -DWARNING_CXX_FLAG_Wswitch-default -Wswitch-default -o CMakeFiles/cmTC_f32e1.dir/src.cxx.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-3DuT3u/src.cxx
+        <command-line>: warning: ISO C++11 requires whitespace after the macro name
+        Linking CXX executable cmTC_f32e1
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f32e1.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_f32e1.dir/src.cxx.o -o cmTC_f32e1 
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-3DuT3u'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:20 (check_cxx_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:78 (check_and_append_cxx_warning_flags)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestConfigurationOptions.cmake:21 (include)"
+      - "_deps/cpputest-src/CMakeLists.txt:91 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_Wswitch-enum"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-h4Wd5x"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-h4Wd5x"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/CPP-F25/code/unittest/_deps/cpputest-src/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_Wswitch-enum"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-h4Wd5x'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_26380/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_26380.dir/build.make CMakeFiles/cmTC_26380.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-h4Wd5x'
+        Building CXX object CMakeFiles/cmTC_26380.dir/src.cxx.o
+        /usr/bin/c++  -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-h4Wd5x/unistd.h -DWARNING_CXX_FLAG_Wswitch-enum -Wswitch-enum -o CMakeFiles/cmTC_26380.dir/src.cxx.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-h4Wd5x/src.cxx
+        <command-line>: warning: ISO C++11 requires whitespace after the macro name
+        Linking CXX executable cmTC_26380
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_26380.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_26380.dir/src.cxx.o -o cmTC_26380 
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-h4Wd5x'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:20 (check_cxx_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:78 (check_and_append_cxx_warning_flags)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestConfigurationOptions.cmake:21 (include)"
+      - "_deps/cpputest-src/CMakeLists.txt:91 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_Wconversion"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-D7Nf5n"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-D7Nf5n"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/CPP-F25/code/unittest/_deps/cpputest-src/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_Wconversion"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-D7Nf5n'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f7ac6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f7ac6.dir/build.make CMakeFiles/cmTC_f7ac6.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-D7Nf5n'
+        Building CXX object CMakeFiles/cmTC_f7ac6.dir/src.cxx.o
+        /usr/bin/c++ -DWARNING_CXX_FLAG_Wconversion -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-D7Nf5n/unistd.h -Wconversion -o CMakeFiles/cmTC_f7ac6.dir/src.cxx.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-D7Nf5n/src.cxx
+        Linking CXX executable cmTC_f7ac6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f7ac6.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_f7ac6.dir/src.cxx.o -o cmTC_f7ac6 
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-D7Nf5n'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:20 (check_cxx_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:78 (check_and_append_cxx_warning_flags)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestConfigurationOptions.cmake:21 (include)"
+      - "_deps/cpputest-src/CMakeLists.txt:91 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_Wsign-conversion"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-ESnxLr"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-ESnxLr"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/CPP-F25/code/unittest/_deps/cpputest-src/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_Wsign-conversion"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-ESnxLr'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_65f6f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_65f6f.dir/build.make CMakeFiles/cmTC_65f6f.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-ESnxLr'
+        Building CXX object CMakeFiles/cmTC_65f6f.dir/src.cxx.o
+        /usr/bin/c++  -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-ESnxLr/unistd.h -DWARNING_CXX_FLAG_Wsign-conversion -Wsign-conversion -o CMakeFiles/cmTC_65f6f.dir/src.cxx.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-ESnxLr/src.cxx
+        <command-line>: warning: ISO C++11 requires whitespace after the macro name
+        Linking CXX executable cmTC_65f6f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_65f6f.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_65f6f.dir/src.cxx.o -o cmTC_65f6f 
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-ESnxLr'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:20 (check_cxx_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:78 (check_and_append_cxx_warning_flags)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestConfigurationOptions.cmake:21 (include)"
+      - "_deps/cpputest-src/CMakeLists.txt:91 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_Wno-padded"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-ov9U9q"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-ov9U9q"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/CPP-F25/code/unittest/_deps/cpputest-src/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_Wno-padded"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-ov9U9q'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ea483/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ea483.dir/build.make CMakeFiles/cmTC_ea483.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-ov9U9q'
+        Building CXX object CMakeFiles/cmTC_ea483.dir/src.cxx.o
+        /usr/bin/c++  -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-ov9U9q/unistd.h -DWARNING_CXX_FLAG_Wno-padded -Wno-padded -o CMakeFiles/cmTC_ea483.dir/src.cxx.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-ov9U9q/src.cxx
+        <command-line>: warning: ISO C++11 requires whitespace after the macro name
+        Linking CXX executable cmTC_ea483
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ea483.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_ea483.dir/src.cxx.o -o cmTC_ea483 
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-ov9U9q'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:20 (check_cxx_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:78 (check_and_append_cxx_warning_flags)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestConfigurationOptions.cmake:21 (include)"
+      - "_deps/cpputest-src/CMakeLists.txt:91 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_Wno-disabled-macro-expansion"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-iAZjAX"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-iAZjAX"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/CPP-F25/code/unittest/_deps/cpputest-src/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_Wno-disabled-macro-expansion"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-iAZjAX'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2e5a3/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2e5a3.dir/build.make CMakeFiles/cmTC_2e5a3.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-iAZjAX'
+        Building CXX object CMakeFiles/cmTC_2e5a3.dir/src.cxx.o
+        /usr/bin/c++  -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-iAZjAX/unistd.h -DWARNING_CXX_FLAG_Wno-disabled-macro-expansion -Wno-disabled-macro-expansion -o CMakeFiles/cmTC_2e5a3.dir/src.cxx.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-iAZjAX/src.cxx
+        <command-line>: warning: ISO C++11 requires whitespace after the macro name
+        cc1plus: note: unrecognized command-line option '-Wno-disabled-macro-expansion' may have been intended to silence earlier diagnostics
+        Linking CXX executable cmTC_2e5a3
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2e5a3.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_2e5a3.dir/src.cxx.o -o cmTC_2e5a3 
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-iAZjAX'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:20 (check_cxx_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:78 (check_and_append_cxx_warning_flags)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestConfigurationOptions.cmake:21 (include)"
+      - "_deps/cpputest-src/CMakeLists.txt:91 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_Wno-reserved-id-macro"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-GpmhQP"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-GpmhQP"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/CPP-F25/code/unittest/_deps/cpputest-src/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_Wno-reserved-id-macro"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-GpmhQP'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a172c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a172c.dir/build.make CMakeFiles/cmTC_a172c.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-GpmhQP'
+        Building CXX object CMakeFiles/cmTC_a172c.dir/src.cxx.o
+        /usr/bin/c++  -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-GpmhQP/unistd.h -DWARNING_CXX_FLAG_Wno-reserved-id-macro -Wno-reserved-id-macro -o CMakeFiles/cmTC_a172c.dir/src.cxx.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-GpmhQP/src.cxx
+        <command-line>: warning: ISO C++11 requires whitespace after the macro name
+        cc1plus: note: unrecognized command-line option '-Wno-reserved-id-macro' may have been intended to silence earlier diagnostics
+        Linking CXX executable cmTC_a172c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a172c.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_a172c.dir/src.cxx.o -o cmTC_a172c 
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-GpmhQP'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:20 (check_cxx_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:78 (check_and_append_cxx_warning_flags)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestConfigurationOptions.cmake:21 (include)"
+      - "_deps/cpputest-src/CMakeLists.txt:91 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_Wno-keyword-macro"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-039IOM"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-039IOM"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/CPP-F25/code/unittest/_deps/cpputest-src/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_Wno-keyword-macro"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-039IOM'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0c0c4/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0c0c4.dir/build.make CMakeFiles/cmTC_0c0c4.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-039IOM'
+        Building CXX object CMakeFiles/cmTC_0c0c4.dir/src.cxx.o
+        /usr/bin/c++  -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-039IOM/unistd.h -DWARNING_CXX_FLAG_Wno-keyword-macro -Wno-keyword-macro -o CMakeFiles/cmTC_0c0c4.dir/src.cxx.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-039IOM/src.cxx
+        <command-line>: warning: ISO C++11 requires whitespace after the macro name
+        cc1plus: note: unrecognized command-line option '-Wno-keyword-macro' may have been intended to silence earlier diagnostics
+        Linking CXX executable cmTC_0c0c4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0c0c4.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_0c0c4.dir/src.cxx.o -o cmTC_0c0c4 
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-039IOM'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:20 (check_cxx_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:78 (check_and_append_cxx_warning_flags)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestConfigurationOptions.cmake:21 (include)"
+      - "_deps/cpputest-src/CMakeLists.txt:91 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_Wno-long-long"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-HiQ49q"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-HiQ49q"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/CPP-F25/code/unittest/_deps/cpputest-src/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_Wno-long-long"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-HiQ49q'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_34939/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_34939.dir/build.make CMakeFiles/cmTC_34939.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-HiQ49q'
+        Building CXX object CMakeFiles/cmTC_34939.dir/src.cxx.o
+        /usr/bin/c++  -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-HiQ49q/unistd.h -DWARNING_CXX_FLAG_Wno-long-long -Wno-long-long -o CMakeFiles/cmTC_34939.dir/src.cxx.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-HiQ49q/src.cxx
+        <command-line>: warning: ISO C++11 requires whitespace after the macro name
+        Linking CXX executable cmTC_34939
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_34939.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_34939.dir/src.cxx.o -o cmTC_34939 
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-HiQ49q'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:20 (check_cxx_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:78 (check_and_append_cxx_warning_flags)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestConfigurationOptions.cmake:21 (include)"
+      - "_deps/cpputest-src/CMakeLists.txt:91 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_Woverloaded-virtual"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-2Z89hk"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-2Z89hk"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/CPP-F25/code/unittest/_deps/cpputest-src/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_Woverloaded-virtual"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-2Z89hk'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5f871/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5f871.dir/build.make CMakeFiles/cmTC_5f871.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-2Z89hk'
+        Building CXX object CMakeFiles/cmTC_5f871.dir/src.cxx.o
+        /usr/bin/c++  -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-2Z89hk/unistd.h -DWARNING_CXX_FLAG_Woverloaded-virtual -Woverloaded-virtual -o CMakeFiles/cmTC_5f871.dir/src.cxx.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-2Z89hk/src.cxx
+        <command-line>: warning: ISO C++11 requires whitespace after the macro name
+        Linking CXX executable cmTC_5f871
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5f871.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_5f871.dir/src.cxx.o -o cmTC_5f871 
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-2Z89hk'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:20 (check_cxx_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:78 (check_and_append_cxx_warning_flags)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestConfigurationOptions.cmake:21 (include)"
+      - "_deps/cpputest-src/CMakeLists.txt:91 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_Wno-global-constructors"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-6sKqWg"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-6sKqWg"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/CPP-F25/code/unittest/_deps/cpputest-src/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_Wno-global-constructors"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-6sKqWg'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1f647/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_1f647.dir/build.make CMakeFiles/cmTC_1f647.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-6sKqWg'
+        Building CXX object CMakeFiles/cmTC_1f647.dir/src.cxx.o
+        /usr/bin/c++  -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-6sKqWg/unistd.h -DWARNING_CXX_FLAG_Wno-global-constructors -Wno-global-constructors -o CMakeFiles/cmTC_1f647.dir/src.cxx.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-6sKqWg/src.cxx
+        <command-line>: warning: ISO C++11 requires whitespace after the macro name
+        cc1plus: note: unrecognized command-line option '-Wno-global-constructors' may have been intended to silence earlier diagnostics
+        Linking CXX executable cmTC_1f647
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1f647.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_1f647.dir/src.cxx.o -o cmTC_1f647 
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-6sKqWg'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:20 (check_cxx_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:78 (check_and_append_cxx_warning_flags)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestConfigurationOptions.cmake:21 (include)"
+      - "_deps/cpputest-src/CMakeLists.txt:91 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_Wno-exit-time-destructors"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-FZggKk"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-FZggKk"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/CPP-F25/code/unittest/_deps/cpputest-src/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_Wno-exit-time-destructors"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-FZggKk'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5eb67/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5eb67.dir/build.make CMakeFiles/cmTC_5eb67.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-FZggKk'
+        Building CXX object CMakeFiles/cmTC_5eb67.dir/src.cxx.o
+        /usr/bin/c++  -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-FZggKk/unistd.h -DWARNING_CXX_FLAG_Wno-exit-time-destructors -Wno-exit-time-destructors -o CMakeFiles/cmTC_5eb67.dir/src.cxx.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-FZggKk/src.cxx
+        <command-line>: warning: ISO C++11 requires whitespace after the macro name
+        cc1plus: note: unrecognized command-line option '-Wno-exit-time-destructors' may have been intended to silence earlier diagnostics
+        Linking CXX executable cmTC_5eb67
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5eb67.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_5eb67.dir/src.cxx.o -o cmTC_5eb67 
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-FZggKk'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:20 (check_cxx_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:78 (check_and_append_cxx_warning_flags)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestConfigurationOptions.cmake:21 (include)"
+      - "_deps/cpputest-src/CMakeLists.txt:91 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_Wno-weak-vtables"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-8ja3NT"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-8ja3NT"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/CPP-F25/code/unittest/_deps/cpputest-src/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_Wno-weak-vtables"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-8ja3NT'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_81a43/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_81a43.dir/build.make CMakeFiles/cmTC_81a43.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-8ja3NT'
+        Building CXX object CMakeFiles/cmTC_81a43.dir/src.cxx.o
+        /usr/bin/c++  -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-8ja3NT/unistd.h -DWARNING_CXX_FLAG_Wno-weak-vtables -Wno-weak-vtables -o CMakeFiles/cmTC_81a43.dir/src.cxx.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-8ja3NT/src.cxx
+        <command-line>: warning: ISO C++11 requires whitespace after the macro name
+        cc1plus: note: unrecognized command-line option '-Wno-weak-vtables' may have been intended to silence earlier diagnostics
+        Linking CXX executable cmTC_81a43
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_81a43.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_81a43.dir/src.cxx.o -o cmTC_81a43 
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-8ja3NT'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:20 (check_cxx_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:78 (check_and_append_cxx_warning_flags)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestConfigurationOptions.cmake:21 (include)"
+      - "_deps/cpputest-src/CMakeLists.txt:91 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_Wno-old-style-cast"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-44e8DK"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-44e8DK"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/CPP-F25/code/unittest/_deps/cpputest-src/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_Wno-old-style-cast"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-44e8DK'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c1eed/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c1eed.dir/build.make CMakeFiles/cmTC_c1eed.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-44e8DK'
+        Building CXX object CMakeFiles/cmTC_c1eed.dir/src.cxx.o
+        /usr/bin/c++  -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-44e8DK/unistd.h -DWARNING_CXX_FLAG_Wno-old-style-cast -Wno-old-style-cast -o CMakeFiles/cmTC_c1eed.dir/src.cxx.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-44e8DK/src.cxx
+        <command-line>: warning: ISO C++11 requires whitespace after the macro name
+        Linking CXX executable cmTC_c1eed
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c1eed.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_c1eed.dir/src.cxx.o -o cmTC_c1eed 
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-44e8DK'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:20 (check_cxx_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:78 (check_and_append_cxx_warning_flags)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestConfigurationOptions.cmake:21 (include)"
+      - "_deps/cpputest-src/CMakeLists.txt:91 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_Wno-cxx98-compat"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-lFqM2R"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-lFqM2R"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/CPP-F25/code/unittest/_deps/cpputest-src/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_Wno-cxx98-compat"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-lFqM2R'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_52319/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_52319.dir/build.make CMakeFiles/cmTC_52319.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-lFqM2R'
+        Building CXX object CMakeFiles/cmTC_52319.dir/src.cxx.o
+        /usr/bin/c++  -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-lFqM2R/unistd.h -DWARNING_CXX_FLAG_Wno-cxx98-compat -Wno-c++98-compat -o CMakeFiles/cmTC_52319.dir/src.cxx.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-lFqM2R/src.cxx
+        <command-line>: warning: ISO C++11 requires whitespace after the macro name
+        cc1plus: note: unrecognized command-line option '-Wno-c++98-compat' may have been intended to silence earlier diagnostics
+        Linking CXX executable cmTC_52319
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_52319.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_52319.dir/src.cxx.o -o cmTC_52319 
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-lFqM2R'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:20 (check_cxx_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:78 (check_and_append_cxx_warning_flags)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestConfigurationOptions.cmake:21 (include)"
+      - "_deps/cpputest-src/CMakeLists.txt:91 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_Wno-cxx98-compat-pedantic"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-eUYRO5"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-eUYRO5"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/CPP-F25/code/unittest/_deps/cpputest-src/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_Wno-cxx98-compat-pedantic"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-eUYRO5'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7abfa/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7abfa.dir/build.make CMakeFiles/cmTC_7abfa.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-eUYRO5'
+        Building CXX object CMakeFiles/cmTC_7abfa.dir/src.cxx.o
+        /usr/bin/c++  -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-eUYRO5/unistd.h -DWARNING_CXX_FLAG_Wno-cxx98-compat-pedantic -Wno-c++98-compat-pedantic -o CMakeFiles/cmTC_7abfa.dir/src.cxx.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-eUYRO5/src.cxx
+        <command-line>: warning: ISO C++11 requires whitespace after the macro name
+        cc1plus: note: unrecognized command-line option '-Wno-c++98-compat-pedantic' may have been intended to silence earlier diagnostics
+        Linking CXX executable cmTC_7abfa
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7abfa.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_7abfa.dir/src.cxx.o -o cmTC_7abfa 
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-eUYRO5'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:20 (check_cxx_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:78 (check_and_append_cxx_warning_flags)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestConfigurationOptions.cmake:21 (include)"
+      - "_deps/cpputest-src/CMakeLists.txt:91 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_Wno-cxx14-compat"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-ZRDbAJ"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-ZRDbAJ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/CPP-F25/code/unittest/_deps/cpputest-src/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_Wno-cxx14-compat"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-ZRDbAJ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8a32a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8a32a.dir/build.make CMakeFiles/cmTC_8a32a.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-ZRDbAJ'
+        Building CXX object CMakeFiles/cmTC_8a32a.dir/src.cxx.o
+        /usr/bin/c++  -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-ZRDbAJ/unistd.h -DWARNING_CXX_FLAG_Wno-cxx14-compat -Wno-c++14-compat -o CMakeFiles/cmTC_8a32a.dir/src.cxx.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-ZRDbAJ/src.cxx
+        <command-line>: warning: ISO C++11 requires whitespace after the macro name
+        Linking CXX executable cmTC_8a32a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8a32a.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_8a32a.dir/src.cxx.o -o cmTC_8a32a 
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-ZRDbAJ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:20 (check_cxx_compiler_flag)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestWarningFlags.cmake:78 (check_and_append_cxx_warning_flags)"
+      - "_deps/cpputest-src/cmake/Modules/CppUTestConfigurationOptions.cmake:21 (include)"
+      - "_deps/cpputest-src/CMakeLists.txt:91 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_Wno-inconsistent-missing-destructor-override"
+    directories:
+      source: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-JoJa9Z"
+      binary: "/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-JoJa9Z"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspaces/CPP-F25/code/unittest/_deps/cpputest-src/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_Wno-inconsistent-missing-destructor-override"
+      cached: true
+      stdout: |
+        Change Dir: '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-JoJa9Z'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0e045/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0e045.dir/build.make CMakeFiles/cmTC_0e045.dir/build
+        gmake[1]: Entering directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-JoJa9Z'
+        Building CXX object CMakeFiles/cmTC_0e045.dir/src.cxx.o
+        /usr/bin/c++  -I/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-JoJa9Z/unistd.h -DWARNING_CXX_FLAG_Wno-inconsistent-missing-destructor-override -Wno-inconsistent-missing-destructor-override -o CMakeFiles/cmTC_0e045.dir/src.cxx.o -c /workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-JoJa9Z/src.cxx
+        <command-line>: warning: ISO C++11 requires whitespace after the macro name
+        cc1plus: note: unrecognized command-line option '-Wno-inconsistent-missing-destructor-override' may have been intended to silence earlier diagnostics
+        Linking CXX executable cmTC_0e045
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0e045.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_0e045.dir/src.cxx.o -o cmTC_0e045 
+        gmake[1]: Leaving directory '/workspaces/CPP-F25/code/unittest/CMakeFiles/CMakeScratch/TryCompile-JoJa9Z'
+        
+      exitCode: 0
+...

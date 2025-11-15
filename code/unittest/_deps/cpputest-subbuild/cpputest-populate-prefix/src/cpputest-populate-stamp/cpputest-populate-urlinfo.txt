@@ -1,0 +1,12 @@
+# This is a generated file and its contents are an internal implementation detail.
+# The download step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+method=url
+command=/usr/bin/cmake;-P;/workspaces/CPP-F25/code/unittest/_deps/cpputest-subbuild/cpputest-populate-prefix/src/cpputest-populate-stamp/download-cpputest-populate.cmake;COMMAND;/usr/bin/cmake;-P;/workspaces/CPP-F25/code/unittest/_deps/cpputest-subbuild/cpputest-populate-prefix/src/cpputest-populate-stamp/verify-cpputest-populate.cmake;COMMAND;/usr/bin/cmake;-P;/workspaces/CPP-F25/code/unittest/_deps/cpputest-subbuild/cpputest-populate-prefix/src/cpputest-populate-stamp/extract-cpputest-populate.cmake
+source_dir=/workspaces/CPP-F25/code/unittest/_deps/cpputest-src
+work_dir=/workspaces/CPP-F25/code/unittest/_deps
+url(s)=https://github.com/cpputest/cpputest/releases/download/v4.0/cpputest-4.0.tar.gz
+hash=
+no_extract=
+

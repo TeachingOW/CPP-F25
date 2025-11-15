@@ -1,0 +1,3 @@
+/workspaces/CPP-F25/code/unittest/_deps/cpputest-subbuild/CMakeFiles/cpputest-populate.dir
+/workspaces/CPP-F25/code/unittest/_deps/cpputest-subbuild/CMakeFiles/edit_cache.dir
+/workspaces/CPP-F25/code/unittest/_deps/cpputest-subbuild/CMakeFiles/rebuild_cache.dir
