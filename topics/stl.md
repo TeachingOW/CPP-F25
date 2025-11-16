@@ -22,7 +22,7 @@ This guide explores the main components—**containers**, **iterators**, and **a
 > - [C++ STL std::queue](https://www.youtube.com/watch?v=axDarbE1Hj4&list=PLvv0ScY6vfd8j-tlhYVPYgiIyXduu6m-L&index=133)
 > - [C++ STL std::priority_queue](https://www.youtube.com/watch?v=dxHx7EYehAQ&list=PLvv0ScY6vfd8j-tlhYVPYgiIyXduu6m-L&index=134)
 > - [STL C++ Iterators](https://www.youtube.com/watch?v=exVA9PpUMkc&list=PLvv0ScY6vfd8j-tlhYVPYgiIyXduu6m-L&index=137)
-> - [STL C++ Iterators) | Ep. 137](https://www.youtube.com/watch?v=vd_pyrxDtNQ&list=PLvv0ScY6vfd8j-tlhYVPYgiIyXduu6m-L&index=138)
+> - [STL C++ Iterators II](https://www.youtube.com/watch?v=vd_pyrxDtNQ&list=PLvv0ScY6vfd8j-tlhYVPYgiIyXduu6m-L&index=138)
 > - [STL C++ Iterators](https://www.youtube.com/watch?v=Fv8oj8EdssY&list=PLvv0ScY6vfd8j-tlhYVPYgiIyXduu6m-L&index=139)
 
 
