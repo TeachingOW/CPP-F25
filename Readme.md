@@ -8,7 +8,6 @@
 - [OOP Principles](tutorials/OOP) 
 ### C++
 - [stl](topics/stl)
-- [stl II](topics/stl2)
 - [Pointer](topics/pointers)
 - [Rule of Three](topics/ruleofThree)
 - [Template](topics/templates)
@@ -41,7 +40,7 @@
 - [BMP Image Processing Quick start](https://github.com/TeachingOW/CPPF25-Assignment2)
 - [SIMDJosn Quickstart](https://github.com/TeachingOW/simdjson-quickstart)
 - [UnitTest](https://github.com/TeachingOW/CPP-Unittest)
-
+- [Sort Merge](topics/mergesort)
 # Lectures
 
 ## Lecture 11/10

@@ -5,11 +5,12 @@ The C++ Standard Template Library (STL) is a cornerstone of modern C++ developme
 
 This guide explores the main components—**containers**, **iterators**, and **algorithms**—with detailed explanations and C++ syntax examples. 
 
-> [!NOTE]
-> You can reference the following videos:
+>  [!NOTE]
+>  You can reference the following videos:
 > - [Standard Template Library (STL) Short Overview](https://www.youtube.com/watch?v=Id6ZEb_Lg58&list=PLvv0ScY6vfd8j-tlhYVPYgiIyXduu6m-L&index=112&t=472s)
 > - [STL std::vector | Modern Cpp Series Ep. 116](https://www.youtube.com/watch?v=iM_rIWmq6cE&list=PLvv0ScY6vfd8j-tlhYVPYgiIyXduu6m-L&index=117)
 > - [STL std::list | Modern Cpp Series Ep. 118](https://www.youtube.com/watch?v=LuPqlBQNjWc&list=PLvv0ScY6vfd8j-tlhYVPYgiIyXduu6m-L&index=119)
+
 > - [STL std::unordered_set (std::algorithm generate_n) | Ep. 122](https://www.youtube.com/watch?v=h1KLcfrDJNQ&list=PLvv0ScY6vfd8j-tlhYVPYgiIyXduu6m-L&index=123)
 > - [STL std::multiset (compare non-trivial types) | Ep. 123](https://www.youtube.com/watch?v=EzZSUY7nc2c&list=PLvv0ScY6vfd8j-tlhYVPYgiIyXduu6m-L&index=124)
 > - [STL std::unordered_multiset (C++11, custom hash) | Ep. 124](https://www.youtube.com/watch?v=z5ILYo3FJ1k&list=PLvv0ScY6vfd8j-tlhYVPYgiIyXduu6m-L&index=125)
