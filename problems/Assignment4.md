@@ -1,5 +1,5 @@
 
-# Assignment III: JSON Schema Analyzer
+# Assignment IV: JSON Schema Analyzer
 
 This assignment involves building a tool that analyzes a JSON document and infers its schema.
 

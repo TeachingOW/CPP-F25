@@ -9,6 +9,11 @@ If a class defines **any one** of these, it must define **all three**:
 3. **Copy assignment operator**
 
 These functions handle **object initialization** and **resource management**.
+> [!NOTE]
+> You can reference the following video:
+> [Rule of Three] (https://www.youtube.com/watch?v=bvCEqS4S0sg)
+
+
 
 ```mermaid
 flowchart TD

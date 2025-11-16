@@ -3,6 +3,11 @@
 
 In C++, programs can receive input directly from the command line. This is useful for utilities, file processors, scripts, automation, and more.
 
+
+> [!NOTE]
+> You can reference the following videos:
+> - [C++ Handling Program arguments (argc, argv, env)](https://www.youtube.com/watch?v=C2Vhp-ozA0k)
+
 ## 1. The `main` Function Signature
 
 To access command-line arguments, define `main` with parameters:

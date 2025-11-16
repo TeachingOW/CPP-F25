@@ -16,6 +16,12 @@ A **pointer** is a variable that stores the memory address of another variable. 
 
 ---
 
+> [!NOTE]
+> You can reference the following videos:
+> [Pointers](https://www.youtube.com/watch?v=_q1jd_hldhw)
+> [Pointers II](https://www.youtube.com/watch?v=t7p5MizOLdM)
+> [new delete ](https://www.youtube.com/watch?v=wIwdrsrficc)
+
 ## 2. Pointer Declaration and Initialization
 
 ### Syntax

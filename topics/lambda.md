@@ -10,7 +10,13 @@ A **lambda expression** is an **anonymous function** — a small, inline functio
 You can store a lambda in a variable, or pass it directly to algorithms like `std::sort`, `std::for_each`, or `std::transform`.
 
 ---
+> [!NOTE]
+> You can reference the following videos:
+> - [C++ Lambdas Part 1  Unnamed function objects](https://www.youtube.com/watch?v=qpgJvl3To3M)
+> - [C++ Lambdas Part 2 The capture](https://www.youtube.com/watch?v=R1bwTAarnz4)
+> - [C++ Lambdas Part 3 Capturing ‘this’  ](https://www.youtube.com/watch?v=W18BxzS42dc)
 
+---
 ##  Basic Syntax
 
 ```cpp
