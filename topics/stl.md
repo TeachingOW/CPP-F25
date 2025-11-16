@@ -17,14 +17,13 @@ This guide explores the main components—**containers**, **iterators**, and **a
 > - [STL std::map](https://www.youtube.com/watch?v=5cGp0vx5u9Q&list=PLvv0ScY6vfd8j-tlhYVPYgiIyXduu6m-L&index=127)
 > - [STL std::multimap](https://www.youtube.com/watch?v=Fz2P6JNJy-c&list=PLvv0ScY6vfd8j-tlhYVPYgiIyXduu6m-L&index=129)
 > - [STL std::unordered_map](https://www.youtube.com/watch?v=pvVrNwZzCgk&list=PLvv0ScY6vfd8j-tlhYVPYgiIyXduu6m-L&index=130)
-
-> - [STL std::unordered_multimap (C++11) | Ep. 130](https://www.youtube.com/watch?v=cQ1S23Tj1XI&list=PLvv0ScY6vfd8j-tlhYVPYgiIyXduu6m-L&index=131)
-> - [C++ STL std::stack (container adaptor) | Ep. 131](https://www.youtube.com/watch?v=6vIIE8_S3RM&list=PLvv0ScY6vfd8j-tlhYVPYgiIyXduu6m-L&index=132)
-> - [C++ STL std::queue (container adaptor) | Ep. 132](https://www.youtube.com/watch?v=axDarbE1Hj4&list=PLvv0ScY6vfd8j-tlhYVPYgiIyXduu6m-L&index=133)
-> - [C++ STL std::priority_queue (container adaptor) | Ep. 133](https://www.youtube.com/watch?v=dxHx7EYehAQ&list=PLvv0ScY6vfd8j-tlhYVPYgiIyXduu6m-L&index=134)
-> - [STL C++ Iterators – Categories | Ep. 136](https://www.youtube.com/watch?v=exVA9PpUMkc&list=PLvv0ScY6vfd8j-tlhYVPYgiIyXduu6m-L&index=137)
-> - [STL C++ Iterators – Range Access (begin, cbegin, etc.) | Ep. 137](https://www.youtube.com/watch?v=vd_pyrxDtNQ&list=PLvv0ScY6vfd8j-tlhYVPYgiIyXduu6m-L&index=138)
-> - [STL C++ Iterators – Writing an iterator from scratch | Ep. 138](https://www.youtube.com/watch?v=Fv8oj8EdssY&list=PLvv0ScY6vfd8j-tlhYVPYgiIyXduu6m-L&index=139)
+> - [STL std::unordered_multimap (C++11)](https://www.youtube.com/watch?v=cQ1S23Tj1XI&list=PLvv0ScY6vfd8j-tlhYVPYgiIyXduu6m-L&index=131)
+> - [C++ STL std::stack](https://www.youtube.com/watch?v=6vIIE8_S3RM&list=PLvv0ScY6vfd8j-tlhYVPYgiIyXduu6m-L&index=132)
+> - [C++ STL std::queue](https://www.youtube.com/watch?v=axDarbE1Hj4&list=PLvv0ScY6vfd8j-tlhYVPYgiIyXduu6m-L&index=133)
+> - [C++ STL std::priority_queue](https://www.youtube.com/watch?v=dxHx7EYehAQ&list=PLvv0ScY6vfd8j-tlhYVPYgiIyXduu6m-L&index=134)
+> - [STL C++ Iterators](https://www.youtube.com/watch?v=exVA9PpUMkc&list=PLvv0ScY6vfd8j-tlhYVPYgiIyXduu6m-L&index=137)
+> - [STL C++ Iterators) | Ep. 137](https://www.youtube.com/watch?v=vd_pyrxDtNQ&list=PLvv0ScY6vfd8j-tlhYVPYgiIyXduu6m-L&index=138)
+> - [STL C++ Iterators](https://www.youtube.com/watch?v=Fv8oj8EdssY&list=PLvv0ScY6vfd8j-tlhYVPYgiIyXduu6m-L&index=139)
 
 
 
