@@ -12,6 +12,8 @@
 - [Rule of Three](topics/ruleofThree)
 - [Template](topics/templates)
 - [File](topics/file)
+- [lambda](topics/lambda)
+- [Arguments](topics/arguments)
 
 
 ## Youtube Playlist 
@@ -41,6 +43,7 @@
 - [SIMDJosn Quickstart](https://github.com/TeachingOW/simdjson-quickstart)
 - [UnitTest](https://github.com/TeachingOW/CPP-Unittest)
 - [Sort Merge](topics/mergesort)
+
 # Lectures
 
 ## Lecture 11/10
