@@ -1,4 +1,13 @@
-template spelization
+
+https://leetcode.com/problems/combination-sum-iv/description/
+https://leetcode.com/problems/ways-to-express-an-integer-as-sum-of-powers/description/
+https://leetcode.com/problems/design-a-text-editor/description/?envType=problem-list-v2&envId=design
+https://leetcode.com/problems/design-an-atm-machine/description/?envType=problem-list-v2&envId=design
+https://leetcode.com/problems/finding-mk-average/description/?envType=problem-list-v2&envId=design
+https://leetcode.com/problems/design-parking-system/description/?envType=problem-list-v2&envId=design
+https://leetcode.com/problems/data-stream-as-disjoint-intervals/description/?envType=problem-list-v2&envId=design
+
+template specilaization 
 
 lvalue, rvalue, move
 
