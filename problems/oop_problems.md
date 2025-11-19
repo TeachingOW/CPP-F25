@@ -275,3 +275,7 @@ Design a chat room system where users can join rooms, send messages, and view ch
 * Can evolve to support **private messages**, **attachments**, or **timestamps per message**
 
 ---
+
+
+# Youtube Mock Interview
+- [link](https://www.youtube.com/watch?v=1qw5ITr3k9E)(Interview is in Python)
