@@ -5,7 +5,9 @@
 ### OOP
 
 - [PillarsofOOP](topics/PillarsofOOP)
-- [OOP Principles](tutorials/OOP) 
+- [OOP Principles](tutorials/OOP)
+- [Problems](problems/oop_problems)
+- 
 ### C++
 - [stl](topics/stl)
 - [Pointer](topics/pointers)
