@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="700" height="240" viewBox="0 0 700 240">
-<!--sas -->
 <rect width="100%" height="100%" fill="white"/>
-<text x="350.0" y="28" font-family="Helvetica, Arial, sans-serif" font-size="20" text-anchor="middle" fill="#111">Frame 1</text>
+<text x="350.0" y="28" font-family="Helvetica, Arial, sans-serif" font-size="20" text-anchor="middle" fill="#111">Frame 2</text>
 <rect x="50" y="50" width="150" height="120" rx="12" ry="12" fill="none" stroke="#111" stroke-width="4"/>
-<text x="125.0" y="116.0" font-family="Helvetica, Arial, sans-serif" font-size="56" font-weight="700" text-anchor="middle" fill="#111">A</text>
+<text x="125.0" y="116.0" font-family="Helvetica, Arial, sans-serif" font-size="56" font-weight="700" text-anchor="middle" fill="#111">B</text>
 <rect x="240" y="50" width="150" height="120" rx="12" ry="12" fill="none" stroke="#111" stroke-width="4"/>
+<text x="315.0" y="116.0" font-family="Helvetica, Arial, sans-serif" font-size="56" font-weight="700" text-anchor="middle" fill="#111">A</text>
 <rect x="430" y="50" width="150" height="120" rx="12" ry="12" fill="none" stroke="#111" stroke-width="4"/>
 <text x="315.0" y="208" font-family="Helvetica, Arial, sans-serif" font-size="16" text-anchor="middle" fill="#111">MRU → LRU (left → right)</text>
 <defs>
@@ -12,6 +12,6 @@
         <path d="M0,0 L8,4 L0,8 z" fill="#111" />
       </marker>
     </defs>
-<path d="M125.0,20 L125.0,44" stroke="#111" stroke-width="3" stroke-dasharray="6 6" fill="none" marker-end="url(#arrowhead)"/>
-<text x="125.0" y="12" font-family="Helvetica, Arial, sans-serif" font-size="14" text-anchor="middle" fill="#111">LRU</text>
+<path d="M315.0,20 L315.0,44" stroke="#111" stroke-width="3" stroke-dasharray="6 6" fill="none" marker-end="url(#arrowhead)"/>
+<text x="315.0" y="12" font-family="Helvetica, Arial, sans-serif" font-size="14" text-anchor="middle" fill="#111">LRU</text>
 </svg>
