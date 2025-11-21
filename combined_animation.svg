@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="240" viewBox="0 0 700 240" style="overflow:visible">
+<g id="group_0"><rect width="100%" height="100%" fill="white" />
+<text x="350.0" y="28" font-family="Helvetica, Arial, sans-serif" font-size="20" text-anchor="middle" fill="#111">Frame 6</text>
+<rect x="50" y="50" width="150" height="120" rx="12" ry="12" fill="none" stroke="#111" stroke-width="4" />
+<text x="125.0" y="116.0" font-family="Helvetica, Arial, sans-serif" font-size="56" font-weight="700" text-anchor="middle" fill="#111">B</text>
+<rect x="240" y="50" width="150" height="120" rx="12" ry="12" fill="none" stroke="#111" stroke-width="4" />
+<text x="315.0" y="116.0" font-family="Helvetica, Arial, sans-serif" font-size="56" font-weight="700" text-anchor="middle" fill="#111">D</text>
+<rect x="430" y="50" width="150" height="120" rx="12" ry="12" fill="none" stroke="#111" stroke-width="4" />
+<text x="505.0" y="116.0" font-family="Helvetica, Arial, sans-serif" font-size="56" font-weight="700" text-anchor="middle" fill="#111">A</text>
+<text x="315.0" y="208" font-family="Helvetica, Arial, sans-serif" font-size="16" text-anchor="middle" fill="#111">MRU → LRU (left → right)</text>
+<defs>
+      <marker id="svg0_arrowhead_78f9aa" orient="auto" markerWidth="8" markerHeight="8" refX="7" refY="4">
+        <path d="M0,0 L8,4 L0,8 z" fill="#111" />
+      </marker>
+    </defs>
+<path d="M505.0,20 L505.0,44" stroke="#111" stroke-width="3" stroke-dasharray="6 6" fill="none" marker-end="url(#svg0_arrowhead_78f9aa)" />
+<text x="505.0" y="12" font-family="Helvetica, Arial, sans-serif" font-size="14" text-anchor="middle" fill="#111">LRU</text>
+<animate attributeName="display" values="inline;none;none;none;none;none;none" dur="14s" begin="0s" repeatCount="indefinite" /></g><g id="group_1"><rect width="100%" height="100%" fill="white" />
+<text x="350.0" y="28" font-family="Helvetica, Arial, sans-serif" font-size="20" text-anchor="middle" fill="#111">Frame 7</text>
+<rect x="50" y="50" width="150" height="120" rx="12" ry="12" fill="none" stroke="#111" stroke-width="4" />
+<text x="125.0" y="116.0" font-family="Helvetica, Arial, sans-serif" font-size="56" font-weight="700" text-anchor="middle" fill="#111">E</text>
+<rect x="240" y="50" width="150" height="120" rx="12" ry="12" fill="none" stroke="#111" stroke-width="4" />
+<text x="315.0" y="116.0" font-family="Helvetica, Arial, sans-serif" font-size="56" font-weight="700" text-anchor="middle" fill="#111">B</text>
+<rect x="430" y="50" width="150" height="120" rx="12" ry="12" fill="none" stroke="#111" stroke-width="4" />
+<text x="505.0" y="116.0" font-family="Helvetica, Arial, sans-serif" font-size="56" font-weight="700" text-anchor="middle" fill="#111">D</text>
+<text x="315.0" y="208" font-family="Helvetica, Arial, sans-serif" font-size="16" text-anchor="middle" fill="#111">MRU → LRU (left → right)</text>
+<defs>
+      <marker id="svg1_arrowhead_25672e" orient="auto" markerWidth="8" markerHeight="8" refX="7" refY="4">
+        <path d="M0,0 L8,4 L0,8 z" fill="#f00b0bff" />
+      </marker>
+    </defs>
+<path d="M505.0,20 L505.0,44" stroke="#111" stroke-width="3" stroke-dasharray="6 6" fill="none" marker-end="url(#svg1_arrowhead_25672e)" />
+<text x="505.0" y="12" font-family="Helvetica, Arial, sans-serif" font-size="14" text-anchor="middle" fill="#111">LRU</text>
+<animate attributeName="display" values="none;inline;none;none;none;none;none" dur="14s" begin="0s" repeatCount="indefinite" /></g><g id="group_2"><rect width="100%" height="100%" fill="white" />
+<text x="350.0" y="28" font-family="Helvetica, Arial, sans-serif" font-size="20" text-anchor="middle" fill="#111">Frame 5</text>
+<rect x="50" y="50" width="150" height="120" rx="12" ry="12" fill="none" stroke="#111" stroke-width="4" />
+<text x="125.0" y="116.0" font-family="Helvetica, Arial, sans-serif" font-size="56" font-weight="700" text-anchor="middle" fill="#111">D</text>
+<rect x="240" y="50" width="150" height="120" rx="12" ry="12" fill="none" stroke="#111" stroke-width="4" />
+<text x="315.0" y="116.0" font-family="Helvetica, Arial, sans-serif" font-size="56" font-weight="700" text-anchor="middle" fill="#111">A</text>
+<rect x="430" y="50" width="150" height="120" rx="12" ry="12" fill="none" stroke="#111" stroke-width="4" />
+<text x="505.0" y="116.0" font-family="Helvetica, Arial, sans-serif" font-size="56" font-weight="700" text-anchor="middle" fill="#111">C</text>
+<text x="315.0" y="208" font-family="Helvetica, Arial, sans-serif" font-size="16" text-anchor="middle" fill="#111">MRU → LRU (left → right)</text>
+<defs>
+      <marker id="svg2_arrowhead_aab599" orient="auto" markerWidth="8" markerHeight="8" refX="7" refY="4">
+        <path d="M0,0 L8,4 L0,8 z" fill="#111" />
+      </marker>
+    </defs>
+<path d="M505.0,20 L505.0,44" stroke="#111" stroke-width="3" stroke-dasharray="6 6" fill="none" marker-end="url(#svg2_arrowhead_aab599)" />
+<text x="505.0" y="12" font-family="Helvetica, Arial, sans-serif" font-size="14" text-anchor="middle" fill="#111">LRU</text>
+<animate attributeName="display" values="none;none;inline;none;none;none;none" dur="14s" begin="0s" repeatCount="indefinite" /></g><g id="group_3"><rect width="100%" height="100%" fill="white" />
+<text x="350.0" y="28" font-family="Helvetica, Arial, sans-serif" font-size="20" text-anchor="middle" fill="#111">Frame 4</text>
+<rect x="50" y="50" width="150" height="120" rx="12" ry="12" fill="none" stroke="#111" stroke-width="4" />
+<text x="125.0" y="116.0" font-family="Helvetica, Arial, sans-serif" font-size="56" font-weight="700" text-anchor="middle" fill="#111">A</text>
+<rect x="240" y="50" width="150" height="120" rx="12" ry="12" fill="none" stroke="#111" stroke-width="4" />
+<text x="315.0" y="116.0" font-family="Helvetica, Arial, sans-serif" font-size="56" font-weight="700" text-anchor="middle" fill="#111">C</text>
+<rect x="430" y="50" width="150" height="120" rx="12" ry="12" fill="none" stroke="#111" stroke-width="4" />
+<text x="505.0" y="116.0" font-family="Helvetica, Arial, sans-serif" font-size="56" font-weight="700" text-anchor="middle" fill="#111">B</text>
+<text x="315.0" y="208" font-family="Helvetica, Arial, sans-serif" font-size="16" text-anchor="middle" fill="#111">MRU → LRU (left → right)</text>
+<defs>
+      <marker id="svg3_arrowhead_36e6f6" orient="auto" markerWidth="8" markerHeight="8" refX="7" refY="4">
+        <path d="M0,0 L8,4 L0,8 z" fill="#111" />
+      </marker>
+    </defs>
+<path d="M505.0,20 L505.0,44" stroke="#111" stroke-width="3" stroke-dasharray="6 6" fill="none" marker-end="url(#svg3_arrowhead_36e6f6)" />
+<text x="505.0" y="12" font-family="Helvetica, Arial, sans-serif" font-size="14" text-anchor="middle" fill="#111">LRU</text>
+<animate attributeName="display" values="none;none;none;inline;none;none;none" dur="14s" begin="0s" repeatCount="indefinite" /></g><g id="group_4"><rect width="100%" height="100%" fill="white" />
+<text x="350.0" y="28" font-family="Helvetica, Arial, sans-serif" font-size="20" text-anchor="middle" fill="#111">Frame 1</text>
+<rect x="50" y="50" width="150" height="120" rx="12" ry="12" fill="none" stroke="#111" stroke-width="4" />
+<text x="125.0" y="116.0" font-family="Helvetica, Arial, sans-serif" font-size="56" font-weight="700" text-anchor="middle" fill="#111">A</text>
+<rect x="240" y="50" width="150" height="120" rx="12" ry="12" fill="none" stroke="#111" stroke-width="4" />
+<rect x="430" y="50" width="150" height="120" rx="12" ry="12" fill="none" stroke="#111" stroke-width="4" />
+<text x="315.0" y="208" font-family="Helvetica, Arial, sans-serif" font-size="16" text-anchor="middle" fill="#111">MRU → LRU (left → right)</text>
+<defs>
+      <marker id="svg4_arrowhead_197874" orient="auto" markerWidth="8" markerHeight="8" refX="7" refY="4">
+        <path d="M0,0 L8,4 L0,8 z" fill="#111" />
+      </marker>
+    </defs>
+<path d="M125.0,20 L125.0,44" stroke="#111" stroke-width="3" stroke-dasharray="6 6" fill="none" marker-end="url(#svg4_arrowhead_197874)" />
+<text x="125.0" y="12" font-family="Helvetica, Arial, sans-serif" font-size="14" text-anchor="middle" fill="#111">LRU</text>
+<animate attributeName="display" values="none;none;none;none;inline;none;none" dur="14s" begin="0s" repeatCount="indefinite" /></g><g id="group_5"><rect width="100%" height="100%" fill="white" />
+<text x="350.0" y="28" font-family="Helvetica, Arial, sans-serif" font-size="20" text-anchor="middle" fill="#111">Frame 3</text>
+<rect x="50" y="50" width="150" height="120" rx="12" ry="12" fill="none" stroke="#111" stroke-width="4" />
+<text x="125.0" y="116.0" font-family="Helvetica, Arial, sans-serif" font-size="56" font-weight="700" text-anchor="middle" fill="#111">C</text>
+<rect x="240" y="50" width="150" height="120" rx="12" ry="12" fill="none" stroke="#111" stroke-width="4" />
+<text x="315.0" y="116.0" font-family="Helvetica, Arial, sans-serif" font-size="56" font-weight="700" text-anchor="middle" fill="#111">B</text>
+<rect x="430" y="50" width="150" height="120" rx="12" ry="12" fill="none" stroke="#111" stroke-width="4" />
+<text x="505.0" y="116.0" font-family="Helvetica, Arial, sans-serif" font-size="56" font-weight="700" text-anchor="middle" fill="#111">A</text>
+<text x="315.0" y="208" font-family="Helvetica, Arial, sans-serif" font-size="16" text-anchor="middle" fill="#111">MRU → LRU (left → right)</text>
+<defs>
+      <marker id="svg5_arrowhead_1538e5" orient="auto" markerWidth="8" markerHeight="8" refX="7" refY="4">
+        <path d="M0,0 L8,4 L0,8 z" fill="#111" />
+      </marker>
+    </defs>
+<path d="M505.0,20 L505.0,44" stroke="#111" stroke-width="3" stroke-dasharray="6 6" fill="none" marker-end="url(#svg5_arrowhead_1538e5)" />
+<text x="505.0" y="12" font-family="Helvetica, Arial, sans-serif" font-size="14" text-anchor="middle" fill="#111">LRU</text>
+<animate attributeName="display" values="none;none;none;none;none;inline;none" dur="14s" begin="0s" repeatCount="indefinite" /></g><g id="group_6"><rect width="100%" height="100%" fill="white" />
+<text x="350.0" y="28" font-family="Helvetica, Arial, sans-serif" font-size="20" text-anchor="middle" fill="#111">Frame 2</text>
+<rect x="50" y="50" width="150" height="120" rx="12" ry="12" fill="none" stroke="#111" stroke-width="4" />
+<text x="125.0" y="116.0" font-family="Helvetica, Arial, sans-serif" font-size="56" font-weight="700" text-anchor="middle" fill="#111">B</text>
+<rect x="240" y="50" width="150" height="120" rx="12" ry="12" fill="none" stroke="#111" stroke-width="4" />
+<text x="315.0" y="116.0" font-family="Helvetica, Arial, sans-serif" font-size="56" font-weight="700" text-anchor="middle" fill="#111">A</text>
+<rect x="430" y="50" width="150" height="120" rx="12" ry="12" fill="none" stroke="#111" stroke-width="4" />
+<text x="315.0" y="208" font-family="Helvetica, Arial, sans-serif" font-size="16" text-anchor="middle" fill="#111">MRU → LRU (left → right)</text>
+<defs>
+      <marker id="svg6_arrowhead_00b7a9" orient="auto" markerWidth="8" markerHeight="8" refX="7" refY="4">
+        <path d="M0,0 L8,4 L0,8 z" fill="#111" />
+      </marker>
+    </defs>
+<path d="M315.0,20 L315.0,44" stroke="#111" stroke-width="3" stroke-dasharray="6 6" fill="none" marker-end="url(#svg6_arrowhead_00b7a9)" />
+<text x="315.0" y="12" font-family="Helvetica, Arial, sans-serif" font-size="14" text-anchor="middle" fill="#111">LRU</text>
+<animate attributeName="display" values="none;none;none;none;none;none;inline" dur="14s" begin="0s" repeatCount="indefinite" /></g></svg>
