@@ -142,4 +142,6 @@ This ensures that **every access** automatically updates the item’s recency st
 ---
 ## Submission
 
-Submit your code with the accepted screenshot from leetcode
+Submit your code with the accepted screenshot from leetcode.
+
+[LeetCode — LRU Cache](https://leetcode.com/problems/lru-cache/description/)
