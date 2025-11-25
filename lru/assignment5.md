@@ -139,7 +139,7 @@ This ensures that **every access** automatically updates the item’s recency st
     b.  If full, the node at the **Tail** (the LRU item) is **removed** from both the list and the hash map (this is the eviction step).
     c.  A **new node** is created, inserted at the **Head** of the list, and the **Hash Map** is updated to point to this new node.
 
-
-## submission
+---
+## Submission
 
 Submit your code with the accepted screenshot from leetcode
