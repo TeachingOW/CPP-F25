@@ -1,4 +1,4 @@
-# **LRU   **
+# ** LRU   **
 
 An LRU Cache is a data structure that stores a limited number of items and automatically evicts the least recently used item when it reaches its capacity. It is designed to provide fast access and efficient eviction based on usage patterns.
 
@@ -16,7 +16,7 @@ LRU caches are widely used in:
 Assume a cache of size 3, assume the following access pattern: A, B, C, A, D, B, E. 
 
 
-### ** Accessing  A**
+### ** Accessing  A **
 
 ![Step 1](svgs/lru_frame_1.svg)
 
@@ -24,7 +24,7 @@ At the beginning, the cache is empty, so page **A** is inserted into the MRU pos
 
 ---
 
-### ** Accessing B**
+### ** Accessing B **
 
 
 ![Step 2](svgs/lru_frame_2.svg)
@@ -33,7 +33,7 @@ The next referenced page is **B**, which is not in the cache. Page B is placed i
 
 ---
 
-### ** Accessing  C**
+### ** Accessing  C **
 
 ![Step 3](svgs/lru_frame_3.svg)
 
@@ -68,8 +68,7 @@ Page **B** is referenced again, but it was evicted earlier and is not in the cac
 
 ### ** Acessing E**
 
-**Image:** `svgs/lru_frame_7.svg`
 ![Step 7](svgs/lru_frame_7.svg)
 
-Finally, page **E** is referenced and is not currently in the cache. The LRU page, **A**, is evicted. Page E is inserted into the MRU position, and pages **B** and **D** shift accordingly. Page **D** becomes the new least recently used page (as shown in `svgs/lru_frame_7.svg`).
+Finally, page **E** is referenced and is not currently in the cache. The LRU page, **A**, is evicted. Page E is inserted into the MRU position, and pages **B** and **D** shift accordingly. Page **D** becomes the new least recently used page.
 
