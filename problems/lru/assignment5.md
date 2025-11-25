@@ -1,4 +1,4 @@
-# LRU  
+# LRU  Assignment 
 
 An LRU Cache is a data structure that stores a limited number of items and automatically evicts the least recently used item when it reaches its capacity. It is designed to provide fast access and efficient eviction based on usage patterns.
 
