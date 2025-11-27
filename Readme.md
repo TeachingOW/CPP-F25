@@ -47,7 +47,7 @@
 - [Sort Merge](topics/mergesort)
 
 # Lectures
-
+<details>
 ## Lecture 11/10
 Working with files
 
@@ -65,7 +65,7 @@ Test your code: [Design Circular Queue](https://leetcode.com/problems/design-cir
 Circular Buffer
 <!-- HW  implment your own strcpy & strcmp -->
 
-
+</details>
 
 ## Interesting links
 - [Google Guide](https://google.github.io/styleguide/cppguide.html)
