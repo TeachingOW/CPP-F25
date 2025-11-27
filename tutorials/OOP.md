@@ -24,9 +24,10 @@
 
 
 
-## Example 
-What design principle(s) below class is breaking? 
-- this is adaopted from https://x.com/SumitM_X 
+## Example
+What design principle(s) below class is breaking?  
+- this is adopted from https://x.com/SumitM_X
+
 ```cpp
 class FeeCalculator {
 public:
@@ -40,73 +41,85 @@ public:
         }
     }
 };
-```
+
+
+
+
+<h2>Example</h2>
+<p>What design principle(s) below class is breaking?</p>
+<p>- this is adopted from <a href="https://x.com/SumitM_X">https://x.com/SumitM_X</a></p>
+
+<pre><code class="language-cpp">
+class FeeCalculator {
+public:
+    double calculateFee(Instrument* instrument) {
+        if (dynamic_cast&lt;Stock*&gt;(instrument)) {
+            return 1.5;
+        } else if (dynamic_cast&lt;Bond*&gt;(instrument)) {
+            return 2.0;
+        } else {
+            return 0.0;
+        }
+    }
+};
+</code></pre>
 
 <details>
-  <summary>  `FeeCalculator` class is breaking **multiple core OOP design principles**. Here are the main ones: </summary>
+  <summary><strong>`FeeCalculator` class is breaking multiple core OOP design principles</strong>. Here are the main ones:</summary>
 
-##  **1. Violation of the Open–Closed Principle (OCP)**
+  <h3>1. Violation of the Open–Closed Principle (OCP)</h3>
+  <p><em>OCP:</em> Classes should be open for extension, but closed for modification.</p>
+  <p>Your <code>calculateFee()</code> method must be <strong>edited every time you add a new instrument type</strong>:</p>
 
-**OCP:** *Classes should be open for extension, but closed for modification.*
+  <pre><code class="language-cpp">
+else if (dynamic_cast&lt;Option*&gt;(instrument)) ...
+  </code></pre>
 
-Your `calculateFee()` method must be **edited every time you add a new instrument type**:
+  <p>This means your class is <strong>not closed for modification</strong>. A single new instrument forces changes in this class.</p>
 
-```cpp
-else if (dynamic_cast<Option*>(instrument)) ...
-```
+  <hr>
 
-This means your class is **not closed for modification**.
-A single new instrument forces changes in this class.
+  <h3>2. Violation of the Single Responsibility Principle (SRP)</h3>
+  <p><em>SRP:</em> A class should have only one reason to change.</p>
+  <p><code>FeeCalculator</code> is now responsible for:</p>
+  <ul>
+    <li>Knowing about all instrument types</li>
+    <li>Deciding how to compute fee for each instrument</li>
+  </ul>
+  <p>This mixes <strong>instrument type logic</strong> with <strong>fee logic</strong> → one class handling multiple responsibilities.</p>
 
----
+  <hr>
 
-##  **2. Violation of the Single Responsibility Principle (SRP)**
+  <h3>3. Violation of Polymorphism / Liskov Substitution Principle (LSP)</h3>
+  <p>Instead of <strong>using dynamic dispatch</strong>, the class:</p>
+  <ul>
+    <li>Checks object types explicitly using <code>dynamic_cast</code></li>
+    <li>Branches based on concrete types</li>
+  </ul>
+  <p>This breaks proper polymorphism because:</p>
+  <ul>
+    <li>The base class <code>Instrument</code> cannot be substituted for its subclasses without special handling.</li>
+    <li>Each subclass should define its <strong>own fee behavior</strong>, not the calculator guessing.</li>
+  </ul>
 
-**SRP:** *A class should have only one reason to change.*
+  <hr>
 
-`FeeCalculator` is now responsible for:
+  <h3>4. Violation of the Dependency Inversion Principle (DIP)</h3>
+  <p><em>DIP:</em> Depend on abstractions, not concrete types.</p>
+  <p>This class depends directly on the concrete classes:</p>
 
-* Knowing about all instrument types
-* Deciding how to compute fee for each instrument
-
-This mixes **instrument type logic** with **fee logic** → one class handling multiple responsibilities.
-
----
-
-##  **3. Violation of Polymorphism / Liskov Substitution Principle (LSP)**
-
-Instead of **using dynamic dispatch** (virtual methods), the class:
-
-* Checks object types explicitly using `dynamic_cast`
-* Branches based on concrete types
-
-This breaks proper polymorphism, because:
-
-* The base class `Instrument` cannot be substituted for its subclasses without special handling.
-* Each subclass should define its **own fee behavior**, not the calculator guessing.
-
----
-
-##  **4. Violation of the Dependency Inversion Principle (DIP)**
-
-**DIP:** *Depend on abstractions, not concrete types.*
-
-This class depends directly on the concrete classes:
-
-```cpp
+  <pre><code class="language-cpp">
 Stock
 Bond
-```
+  </code></pre>
 
-Making it rigid and fragile.
+  <p>Making it rigid and fragile.</p>
 
----
+  <hr>
 
-##  **Correct OOP version (polymorphism)**
+  <h3>Correct OOP version (polymorphism)</h3>
 
-Let each instrument compute its own fee:
-
-```cpp
+  <pre><code class="language-cpp">
 class Instrument {
 public:
     virtual ~Instrument() = default;
@@ -126,11 +139,9 @@ public:
 class FeeCalculator {
 public:
     double calculateFee(const Instrument* instrument) const {
-        return instrument->fee();   // polymorphic call
+        return instrument-&gt;fee();   // polymorphic call
     }
 };
-```
+  </code></pre>
 
 </details>
-
-

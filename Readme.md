@@ -47,28 +47,27 @@
 - [Sort Merge](topics/mergesort)
 
 # Lectures
-<details markdown="1">
+<details>
   <summary>Lecture Notes</summary>
 
-  ## Lecture 11/10
-  Working with files
+  <p><strong>Lecture 11/10</strong><br>
+  Working with files</p>
 
-  ## Lecture 10/29
-  Working on Bitmap image programs
+  <p><strong>Lecture 10/29</strong><br>
+  Working on Bitmap image programs</p>
 
-  ## Lecture 10/27
-  Working on Bitmap image programs
+  <p><strong>Lecture 10/27</strong><br>
+  Working on Bitmap image programs</p>
 
-  ## Lecture 10/22
-  Test your code: [Design Circular Queue](https://leetcode.com/problems/design-circular-queue/)
+  <p><strong>Lecture 10/22</strong><br>
+  Test your code: <a href="https://leetcode.com/problems/design-circular-queue/">Design Circular Queue</a></p>
 
-  ## Lecture 10/20
-  [Vector (with rule of 3)](https://gist.github.com/oldwestbury/3d25c40b3296936c2c457f1a1e5bd99e)  
-  Circular Buffer  
-  <!-- HW implement your own strcpy & strcmp -->
+  <p><strong>Lecture 10/20</strong><br>
+  <a href="https://gist.github.com/oldwestbury/3d25c40b3296936c2c457f1a1e5bd99e">Vector (with rule of 3)</a><br>
+  Circular Buffer<br>
+  <!-- HW implement your own strcpy & strcmp --></p>
 
 </details>
-
 
 ## Interesting links
 - [Google Guide](https://google.github.io/styleguide/cppguide.html)
