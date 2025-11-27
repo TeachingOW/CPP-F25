@@ -24,26 +24,6 @@
 
 
 
-## Example
-What design principle(s) below class is breaking?  
-- this is adopted from https://x.com/SumitM_X
-
-```cpp
-class FeeCalculator {
-public:
-    double calculateFee(Instrument* instrument) {
-        if (dynamic_cast<Stock*>(instrument)) {
-            return 1.5;
-        } else if (dynamic_cast<Bond*>(instrument)) {
-            return 2.0;
-        } else {
-            return 0.0;
-        }
-    }
-};
-
-
-
 
 <h2>Example</h2>
 <p>What design principle(s) below class is breaking?</p>

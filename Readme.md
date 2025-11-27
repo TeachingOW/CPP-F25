@@ -47,8 +47,7 @@
 - [Sort Merge](topics/mergesort)
 
 # Lectures
-<details>
-  <summary>Lecture Notes</summary>
+
 
   <p><strong>Lecture 11/10</strong><br>
   Working with files</p>
@@ -67,7 +66,7 @@
   Circular Buffer<br>
   <!-- HW implement your own strcpy & strcmp --></p>
 
-</details>
+
 
 ## Interesting links
 - [Google Guide](https://google.github.io/styleguide/cppguide.html)
