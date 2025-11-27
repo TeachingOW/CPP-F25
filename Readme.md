@@ -47,7 +47,7 @@
 - [Sort Merge](topics/mergesort)
 
 # Lectures
-<details>
+<details markdown="1">
   <summary>Lecture Notes</summary>
 
   ## Lecture 11/10

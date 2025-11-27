@@ -1,6 +1,6 @@
 
 
-# Installation
+# Installation Instruction
 
 
 Visual Studio is a full-featured IDE ideal for large-scale C++ projects, offering built-in debugging, compiling, and testing tools. In contrast, Visual Studio Code is a lightweight, extensible code editor that requires extensions for C++ support but provides flexibility and better performance on low-end machines. VS is best for structured, enterprise applications, while VS Code suits those who prefer customization and cross-platform development. 
