@@ -27,15 +27,15 @@
 
 ## Example
  What design principle(s) below class is breaking? 
- this is adopted from <a href="https://x.com/SumitM_X">https://x.com/SumitM_X</a></p>
+ this is adopted from <a href="https://x.com/SumitM_X">https://x.com/SumitM_X</a>
 
 ```cpp
 class FeeCalculator {
 public:
     double calculateFee(Instrument* instrument) {
-        if (dynamic_cast&lt;Stock*&gt;(instrument)) {
+        if (dynamic_cast<Stock*>(instrument)) {
             return 1.5;
-        } else if (dynamic_cast&lt;Bond*&gt;(instrument)) {
+        } else if (dynamic_cast<Bond*>(instrument)) {
             return 2.0;
         } else {
             return 0.0;
@@ -86,10 +86,10 @@ else if (dynamic_cast&lt;Option*&gt;(instrument)) ...
   <p><em>DIP:</em> Depend on abstractions, not concrete types.</p>
   <p>This class depends directly on the concrete classes:</p>
 
-  ```cpp
+```cpp
 Stock
 Bond
-  ```
+```
 
   <p>Making it rigid and fragile.</p>
 
@@ -117,7 +117,7 @@ public:
 class FeeCalculator {
 public:
     double calculateFee(const Instrument* instrument) const {
-        return instrument-&gt;fee();   // polymorphic call
+        return instrument->fee();   // polymorphic call
     }
 };
 ```
