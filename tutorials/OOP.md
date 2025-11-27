@@ -45,7 +45,7 @@ public:
 ```
 
   
-  ### 1. Violation of the Open–Closed Principle (OCP)</h3>
+### 1. Violation of the Open–Closed Principle (OCP)
   <p><em>OCP:</em> Classes should be open for extension, but closed for modification.</p>
   <p>Your <code>calculateFee()</code> method must be <strong>edited every time you add a new instrument type</strong>:</p>
 
@@ -57,7 +57,7 @@ else if (dynamic_cast&lt;Option*&gt;(instrument)) ...
 
   <hr>
 
-  ### 2. Violation of the Single Responsibility Principle (SRP)
+### 2. Violation of the Single Responsibility Principle (SRP)
   <p><em>SRP:</em> A class should have only one reason to change.</p>
   
   <ul>
@@ -68,7 +68,7 @@ else if (dynamic_cast&lt;Option*&gt;(instrument)) ...
 
   <hr>
 
-  ###  3. Violation of Polymorphism / Liskov Substitution Principle (LSP)
+###  3. Violation of Polymorphism / Liskov Substitution Principle (LSP)
   <p>Instead of <strong>using dynamic dispatch</strong>, the class:</p>
   <ul>
     <li>Checks object types explicitly using <code>dynamic_cast</code></li>
@@ -82,7 +82,7 @@ else if (dynamic_cast&lt;Option*&gt;(instrument)) ...
 
   <hr>
 
-  ### 4. Violation of the Dependency Inversion Principle (DIP)
+### 4. Violation of the Dependency Inversion Principle (DIP)
   <p><em>DIP:</em> Depend on abstractions, not concrete types.</p>
   <p>This class depends directly on the concrete classes:</p>
 
