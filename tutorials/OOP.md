@@ -25,11 +25,11 @@
 
 
 
-<h2>Example</h2>
-<p>What design principle(s) below class is breaking?</p>
-<p>- this is adopted from <a href="https://x.com/SumitM_X">https://x.com/SumitM_X</a></p>
+## Example
+ What design principle(s) below class is breaking? 
+ this is adopted from <a href="https://x.com/SumitM_X">https://x.com/SumitM_X</a></p>
 
-<pre><code class="language-cpp">
+```cpp
 class FeeCalculator {
 public:
     double calculateFee(Instrument* instrument) {
@@ -42,26 +42,24 @@ public:
         }
     }
 };
-</code></pre>
+```
 
-<details>
-  <summary><strong>`FeeCalculator` class is breaking multiple core OOP design principles</strong>. Here are the main ones:</summary>
-
-  <h3>1. Violation of the Open–Closed Principle (OCP)</h3>
+  
+  ### 1. Violation of the Open–Closed Principle (OCP)</h3>
   <p><em>OCP:</em> Classes should be open for extension, but closed for modification.</p>
   <p>Your <code>calculateFee()</code> method must be <strong>edited every time you add a new instrument type</strong>:</p>
 
-  <pre><code class="language-cpp">
+  ```cpp
 else if (dynamic_cast&lt;Option*&gt;(instrument)) ...
-  </code></pre>
+  ```
 
   <p>This means your class is <strong>not closed for modification</strong>. A single new instrument forces changes in this class.</p>
 
   <hr>
 
-  <h3>2. Violation of the Single Responsibility Principle (SRP)</h3>
+  ### 2. Violation of the Single Responsibility Principle (SRP)
   <p><em>SRP:</em> A class should have only one reason to change.</p>
-  <p><code>FeeCalculator</code> is now responsible for:</p>
+  
   <ul>
     <li>Knowing about all instrument types</li>
     <li>Deciding how to compute fee for each instrument</li>
@@ -70,7 +68,7 @@ else if (dynamic_cast&lt;Option*&gt;(instrument)) ...
 
   <hr>
 
-  <h3>3. Violation of Polymorphism / Liskov Substitution Principle (LSP)</h3>
+  ###  3. Violation of Polymorphism / Liskov Substitution Principle (LSP)
   <p>Instead of <strong>using dynamic dispatch</strong>, the class:</p>
   <ul>
     <li>Checks object types explicitly using <code>dynamic_cast</code></li>
@@ -84,14 +82,14 @@ else if (dynamic_cast&lt;Option*&gt;(instrument)) ...
 
   <hr>
 
-  <h3>4. Violation of the Dependency Inversion Principle (DIP)</h3>
+  ### 4. Violation of the Dependency Inversion Principle (DIP)
   <p><em>DIP:</em> Depend on abstractions, not concrete types.</p>
   <p>This class depends directly on the concrete classes:</p>
 
-  <pre><code class="language-cpp">
+  ```cpp
 Stock
 Bond
-  </code></pre>
+  ```
 
   <p>Making it rigid and fragile.</p>
 
@@ -99,7 +97,7 @@ Bond
 
   <h3>Correct OOP version (polymorphism)</h3>
 
-  <pre><code class="language-cpp">
+```cpp  
 class Instrument {
 public:
     virtual ~Instrument() = default;
@@ -122,6 +120,4 @@ public:
         return instrument-&gt;fee();   // polymorphic call
     }
 };
-  </code></pre>
-
-</details>
+```
