@@ -1,5 +1,39 @@
 
 
+#P 3
+
+#include <vector>
+class BitVector : public std::vector<unsigned char> {
+	size_t no_of_bits = 0;
+
+
+public:
+	BitVector() :no_of_bits{ 0 } {};
+	
+	// Pushes a single bit (0 or 1) to the back of the vector
+	void push_back(bool bit) {
+		if (no_of_bits % 8 == 0) {
+				//need to add a new byte
+			std::vector<unsigned char>::push_back(0);
+		}
+		if (bit) {
+			unsigned char& v = std::vector<unsigned char>::operator [](no_of_bits / 8);
+			v |= 1 << (no_of_bits % 8);
+		}
+		no_of_bits++;
+	}
+	// Returns the number of bits stored in the BitVector
+	size_t size() const  {
+		return no_of_bits;
+	}
+	// Accesses a specific bit by index (0-based)
+	bool operator[](int index) const {
+		 unsigned char v = std::vector<unsigned char>::operator [](index / 8);
+		return ( v & (1 << (index % 8)));
+	}
+};
+
+
 #P 4
 ```c++
 int get_bucket(double v, double min_, double max_,int num){
