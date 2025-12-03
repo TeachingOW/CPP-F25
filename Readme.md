@@ -16,7 +16,7 @@
 - [File](topics/file)
 - [lambda](topics/lambda)
 - [Arguments](topics/arguments)
-
+- [C++ 11](topics/c++11.md)
 
 ## Youtube Playlist 
 -  [C++ Programming playlist](https://www.youtube.com/playlist?list=PLvv0ScY6vfd8j-tlhYVPYgiIyXduu6m-L)
