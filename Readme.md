@@ -22,7 +22,7 @@
 -  [C++ Programming playlist](https://www.youtube.com/playlist?list=PLvv0ScY6vfd8j-tlhYVPYgiIyXduu6m-L)
 
 ## Cheat Sheet
-    - [C++ Cheat Sheet](cheatsheet.pdf)
+ - [C++ Cheat Sheet](cheatsheet.pdf)
 
 ## Lectures Code
 
